@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/full_light_green"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/mainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/banner1">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/fdname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="@font/baloobhai2_bold"
+            android:text="@string/reminder"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setReminder"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/baloobhai2_bold"
+                    android:text="@string/content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nameet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/lexend"
+                    android:hint="@string/content"
+                    android:padding="7dp"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/setReminder"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/fdname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/baloobhai2_bold"
+                    android:text="@string/notification"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleX="1.2"
+                    android:scaleY="1.3"
+                    android:thumbTint="@color/white" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/showTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/EditText"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/setTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/baloobhai2_bold"
+                    android:text="@string/set_time"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/baloobhai2_bold"
+                    android:text="08:00 PM"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/repeatReminder"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/showTimePicker"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloobhai2_bold"
+                    android:text="@string/repeat"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/repeat"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/sunday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/button_bg"
+                        android:fontFamily="@font/lexend"
+                        android:gravity="center"
+                        android:text="S"
+                        android:textColor="@color/black"
+                        android:textOff="S"
+                        android:textOn="S"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/monday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/button_bg"
+                        android:fontFamily="@font/lexend"
+                        android:gravity="center"
+                        android:text="M"
+                        android:textOff="M"
+                        android:textOn="M"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tuesday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/monday"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/button_bg"
+                        android:fontFamily="@font/lexend"
+                        android:text="T"
+                        android:textColor="@color/black"
+                        android:textOff="T"
+                        android:textOn="T"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/wednesday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/button_bg"
+                        android:fontFamily="@font/lexend"
+                        android:gravity="center"
+                        android:text="W"
+                        android:textColor="@color/black"
+                        android:textOff="W"
+                        android:textOn="W"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/thurday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/button_bg"
+                        android:fontFamily="@font/lexend"
+                        android:text="T"
+                        android:textColor="@color/black"
+                        android:textOff="T"
+                        android:textOn="T"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/friday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/button_bg"
+                        android:fontFamily="@font/lexend"
+                        android:gravity="center"
+                        android:text="F"
+                        android:textColor="@color/black"
+                        android:textOff="F"
+                        android:textOn="F"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/saturday"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/button_bg"
+                        android:fontFamily="@font/lexend"
+                        android:gravity="center"
+                        android:text="S"
+                        android:textColor="@color/black"
+                        android:textOff="S"
+                        android:textOn="S"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/repeatReminder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_radius"
+            android:fontFamily="@font/baloobhai2_bold"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

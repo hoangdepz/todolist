@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.demo.todolistapp">
+
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <application
+        android:name="com.demo.todolistapp.ApplicationEmojis"
+        android:theme="@style/Theme.TodoList"
+
+        android:allowBackup="true"
+        android:icon="@drawable/icon200"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        >
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:theme="@style/SplashScreenTheme"
+            android:name="com.demo.todolistapp.ActivitySplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.demo.todolistapp.CategoryActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.ActivityTheme"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.ActivitySearch"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.AddTaskActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/MainActivity"
+            android:name="com.demo.todolistapp.ActivityMain"
+            android:exported="false"/>
+
+
+        <activity
+            android:name="com.demo.todolistapp.ActivityViewPager"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.ActivityProfile"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.ActivityReminder"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.AddNoteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.demo.todolistapp.ActivityArchived"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.TrashActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.Lock.ShowPasscodeActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.Lock.PasswordOptionsActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.Lock.PasswordQuestionsActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.demo.todolistapp.Lock.AddPasswordActivity"
+            android:exported="false"/>
+
+        <receiver
+            android:name="com.demo.todolistapp.ReminderClasses.RemindersBroadcastReceiver"
+            android:exported="false"/>
+        <receiver android:name="com.demo.todolistapp.ReminderClasses.SnoozeReceivers"/>
+        <receiver android:name="com.demo.todolistapp.ReminderClasses.NotificationsCancelledReceiver"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+</manifest>

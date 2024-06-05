@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/delete_nav"
+        android:id="@+id/trash"
+        android:title="@string/trash"/>
+    <item
+        android:icon="@drawable/category"
+        android:id="@+id/category"
+        android:title="@string/category"/>
+    <item
+        android:icon="@drawable/lock"
+        android:id="@+id/lock"
+        android:title="@string/lock"
+        android:iconTint="@color/black"/>
+    <item
+        android:icon="@drawable/rate"
+        android:id="@+id/rate_us"
+        android:title="@string/rate_us"/>
+    <item
+        android:icon="@drawable/share"
+        android:id="@+id/share_us"
+        android:title="@string/share_us"/>
+    <item
+        android:icon="@drawable/privacy"
+        android:id="@+id/privacy"
+        android:title="@string/privacy_policy"/>
+</menu>

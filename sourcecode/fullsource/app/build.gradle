@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.demo.todolistapp"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resConfigs "en"
+        multiDexEnabled true
+
+
+    }
+    bundle {
+        density {
+            enableSplit true
+        }
+        abi {
+            enableSplit true
+        }
+        language {
+            enableSplit false
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding true
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.7.0'
+
+    implementation 'com.haibin:calendarview:3.6.8'
+
+    def emojiViewVersion = "1.5.2"
+    def emojiViewProvider = "AppleProvider"
+
+    implementation "io.github.aghajari:AXEmojiView:$emojiViewVersion"
+    implementation "io.github.aghajari:AXEmojiView-$emojiViewProvider:$emojiViewVersion"
+
+
+    implementation 'io.github.itsxtt:pattern-lock:0.2.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.0.6'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.airbnb.android:lottie:5.2.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
+
+
+}
