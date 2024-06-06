@@ -54,6 +54,7 @@ android {
         dataBinding = true
         viewBinding true
     }
+    namespace 'com.demo.todolistapp'
 }
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
