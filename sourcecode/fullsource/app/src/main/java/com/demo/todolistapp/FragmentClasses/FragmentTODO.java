@@ -18,7 +18,7 @@ import com.demo.todolistapp.AdapterClasses.AdapterTODO;
 import com.demo.todolistapp.AdapterClasses.CategoryAdapter;
 import com.demo.todolistapp.AddTaskActivity;
 import com.demo.todolistapp.DataHolderClasses.HolderTODODialog;
-import com.demo.todolistapp.DatabaseClasses.MyCatgoryhelper;
+import com.demo.todolistapp.DatabaseClasses.CategoryHelper;
 import com.demo.todolistapp.DatabaseClasses.TaskHelper;
 import com.demo.todolistapp.Listeners.Category;
 import com.demo.todolistapp.Listeners.onTaskChanges;
@@ -145,30 +145,30 @@ public class FragmentTODO extends Fragment implements onTaskChanges {
     }
 
     public void fetchCategory() {
-        MyCatgoryhelper myCatgoryhelper = new MyCatgoryhelper(getActivity());
-        List<CategoryModel> allCategory = myCatgoryhelper.getAllCategory();
+        CategoryHelper categoryHelper = new CategoryHelper(getActivity());
+        List<CategoryModel> allCategory = categoryHelper.getAllCategory();
         this.categorylist = allCategory;
         if (allCategory == null || allCategory.isEmpty()) {
             CategoryModel categoryModel = new CategoryModel();
             categoryModel.setName(getString(R.string.none));
             categoryModel.setBuiltIn(2L);
-            myCatgoryhelper.addCategory(categoryModel);
+            categoryHelper.addCategory(categoryModel);
             CategoryModel categoryModel2 = new CategoryModel();
             categoryModel2.setName(getString(R.string.work));
             categoryModel2.setBuiltIn(2L);
-            myCatgoryhelper.addCategory(categoryModel2);
+            categoryHelper.addCategory(categoryModel2);
             CategoryModel categoryModel3 = new CategoryModel();
             categoryModel3.setName(getString(R.string.personal));
             categoryModel3.setBuiltIn(2L);
-            myCatgoryhelper.addCategory(categoryModel3);
+            categoryHelper.addCategory(categoryModel3);
             CategoryModel categoryModel4 = new CategoryModel();
             categoryModel4.setName(getString(R.string.wishlist));
             categoryModel4.setBuiltIn(2L);
-            myCatgoryhelper.addCategory(categoryModel4);
+            categoryHelper.addCategory(categoryModel4);
             CategoryModel categoryModel5 = new CategoryModel();
             categoryModel5.setName(getString(R.string.birthday));
             categoryModel5.setBuiltIn(2L);
-            myCatgoryhelper.addCategory(categoryModel5);
+            categoryHelper.addCategory(categoryModel5);
             fetchCategory();
         }
         this.adapter1 = new CategoryAdapter(getActivity(), this.categorylist, false, new Category() { 

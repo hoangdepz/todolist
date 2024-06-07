@@ -39,10 +39,9 @@ import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.demo.todolistapp.R;
 import com.demo.todolistapp.AdapterClasses.CategoryAdapter;
 import com.demo.todolistapp.DataHolderClasses.HolderTODODialog;
-import com.demo.todolistapp.DatabaseClasses.MyCatgoryhelper;
+import com.demo.todolistapp.DatabaseClasses.CategoryHelper;
 import com.demo.todolistapp.DatabaseClasses.TaskHelper;
 import com.demo.todolistapp.Listeners.Category;
 import com.demo.todolistapp.Lock.LockHolder;
@@ -65,7 +64,7 @@ public class AddTaskActivity extends AppCompatActivity {
     ActivityAddTaskBinding binding;
     private Calendar calendar1;
     TaskHelper db;
-    MyCatgoryhelper dbCt;
+    CategoryHelper dbCt;
     private String docId;
     List<CategoryModel> list;
     TODOModels model1;
@@ -104,7 +103,7 @@ public class AddTaskActivity extends AppCompatActivity {
         setStatusBarTransparentBlack();
         settheme();
         this.db = new TaskHelper(this);
-        this.dbCt = new MyCatgoryhelper(this);
+        this.dbCt = new CategoryHelper(this);
         this.docId = getIntent().getStringExtra("docId");
         updateButtonDate();
         fetchData(this);

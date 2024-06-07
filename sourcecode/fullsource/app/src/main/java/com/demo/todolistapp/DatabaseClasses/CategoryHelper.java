@@ -14,14 +14,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: classes2.dex */
-public class MyCatgoryhelper extends SQLiteOpenHelper {
+public class CategoryHelper extends SQLiteOpenHelper {
     Context context;
 
     @Override // android.database.sqlite.SQLiteOpenHelper
     public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
     }
 
-    public MyCatgoryhelper(Context context) {
+    public CategoryHelper(Context context) {
         super(context, ParamsCategory.DB_NAME, (SQLiteDatabase.CursorFactory) null, 1);
         this.context = context;
     }
@@ -34,7 +34,7 @@ public class MyCatgoryhelper extends SQLiteOpenHelper {
     public long addCategory(CategoryModel categoryModel) {
         if (isCategoryExists(categoryModel.getName())) {
             Context context = this.context;
-            Toast.makeText(context, context.getString(R.string.category_is_already_exist), 0).show();
+            Toast.makeText(context, context.getString(R.string.category_is_already_exist), Toast.LENGTH_SHORT).show();
             return -1L;
         }
         SQLiteDatabase writableDatabase = getWritableDatabase();

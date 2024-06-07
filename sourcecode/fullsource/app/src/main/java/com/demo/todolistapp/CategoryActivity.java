@@ -17,9 +17,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.demo.todolistapp.R;
 import com.demo.todolistapp.AdapterClasses.AllCategoryAdapter;
-import com.demo.todolistapp.DatabaseClasses.MyCatgoryhelper;
+import com.demo.todolistapp.DatabaseClasses.CategoryHelper;
 import com.demo.todolistapp.DatabaseClasses.TaskHelper;
 import com.demo.todolistapp.Lock.LockHolder;
 import com.demo.todolistapp.Lock.PatternDialog;
@@ -30,7 +29,7 @@ import com.demo.todolistapp.databinding.ActivityCategoryBinding;
 
 public class CategoryActivity extends AppCompatActivity {
     ActivityCategoryBinding binding;
-    MyCatgoryhelper db;
+    CategoryHelper db;
     TextView ok;
     TaskHelper taskHelper;
     boolean isBackpressed = true;
@@ -51,7 +50,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         setStatusBarTransparentBlack();
         settheme();
-        this.db = new MyCatgoryhelper(this);
+        this.db = new CategoryHelper(this);
         this.taskHelper = new TaskHelper(this);
         this.binding.back.setOnClickListener(new View.OnClickListener() { 
             @Override 
