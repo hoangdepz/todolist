@@ -27,7 +27,7 @@ import com.demo.todolistapp.Models.TODOModels;
 import com.demo.todolistapp.R;
 import com.demo.todolistapp.RateUsDialogs;
 import com.demo.todolistapp.ReminderClasses.ControlMusic;
-import com.demo.todolistapp.databinding.TODOFragmentBinding;
+import com.demo.todolistapp.databinding.FragmentTodolistBinding;
 import java.util.ArrayList;
 
 import java.util.Calendar;
@@ -38,7 +38,7 @@ import java.util.List;
 public class FragmentTODO extends Fragment implements onTaskChanges {
     AdapterTODO adapter;
     CategoryAdapter adapter1;
-    TODOFragmentBinding binding;
+    FragmentTodolistBinding binding;
     List<CategoryModel> categorylist;
     TaskHelper db;
     List<TODOModels> list;
@@ -49,7 +49,7 @@ public class FragmentTODO extends Fragment implements onTaskChanges {
 
     @Override 
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        this.binding = TODOFragmentBinding.inflate(layoutInflater, viewGroup, false);
+        this.binding = FragmentTodolistBinding.inflate(layoutInflater, viewGroup, false);
         this.db = new TaskHelper(getActivity());
         fetchData();
         fetchCheckedData();
