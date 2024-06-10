@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <application
-        android:name="com.demo.todolistapp.ApplicationEmojis"
+        android:name="com.hieupro.todolistapp.ApplicationEmojis"
         android:theme="@style/Theme.TodoList"
 
         android:allowBackup="true"
@@ -37,7 +37,7 @@
 
         <activity
             android:theme="@style/SplashScreenTheme"
-            android:name="com.demo.todolistapp.ActivitySplash"
+            android:name="com.hieupro.todolistapp.ActivitySplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -45,60 +45,60 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.demo.todolistapp.CategoryActivity"
+            android:name="com.hieupro.todolistapp.CategoryActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.ActivityTheme"
+            android:name="com.hieupro.todolistapp.ActivityTheme"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.ActivitySearch"
+            android:name="com.hieupro.todolistapp.ActivitySearch"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.AddTaskActivity"
+            android:name="com.hieupro.todolistapp.AddTaskActivity"
             android:exported="false"/>
         <activity
             android:theme="@style/MainActivity"
-            android:name="com.demo.todolistapp.ActivityMain"
+            android:name="com.hieupro.todolistapp.ActivityMain"
             android:exported="false"/>
 
 
         <activity
-            android:name="com.demo.todolistapp.ActivityViewPager"
+            android:name="com.hieupro.todolistapp.ActivityViewPager"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.ActivityProfile"
+            android:name="com.hieupro.todolistapp.ActivityProfile"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.ActivityReminder"
+            android:name="com.hieupro.todolistapp.ActivityReminder"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.AddNoteActivity"
+            android:name="com.hieupro.todolistapp.AddNoteActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name="com.demo.todolistapp.ActivityArchived"
+            android:name="com.hieupro.todolistapp.ActivityArchived"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.TrashActivity"
+            android:name="com.hieupro.todolistapp.TrashActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.Lock.ShowPasscodeActivity"
+            android:name="com.hieupro.todolistapp.Lock.ShowPasscodeActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.Lock.PasswordOptionsActivity"
+            android:name="com.hieupro.todolistapp.Lock.PasswordOptionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.Lock.PasswordQuestionsActivity"
+            android:name="com.hieupro.todolistapp.Lock.PasswordQuestionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.todolistapp.Lock.AddPasswordActivity"
+            android:name="com.hieupro.todolistapp.Lock.AddPasswordActivity"
             android:exported="false"/>
 
         <receiver
-            android:name="com.demo.todolistapp.ReminderClasses.RemindersBroadcastReceiver"
+            android:name="com.hieupro.todolistapp.ReminderClasses.RemindersBroadcastReceiver"
             android:exported="false"/>
-        <receiver android:name="com.demo.todolistapp.ReminderClasses.SnoozeReceivers"/>
-        <receiver android:name="com.demo.todolistapp.ReminderClasses.NotificationsCancelledReceiver"/>
+        <receiver android:name="com.hieupro.todolistapp.ReminderClasses.SnoozeReceivers"/>
+        <receiver android:name="com.hieupro.todolistapp.ReminderClasses.NotificationsCancelledReceiver"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"

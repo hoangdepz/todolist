@@ -236,7 +236,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <com.demo.todolistapp.AudioRecorder.WaveformView
+            <com.hieupro.todolistapp.AudioRecorder.WaveformView
                 android:id="@+id/waveformView"
                 android:layout_width="match_parent"
                 android:layout_height="400px"
