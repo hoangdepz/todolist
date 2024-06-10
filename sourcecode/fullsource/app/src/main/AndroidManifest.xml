@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <application
-        android:name="com.hieupro.todolistapp.ApplicationEmojis"
+        android:name="com.hieupro.checklistnote.ApplicationEmojis"
         android:theme="@style/Theme.TodoList"
 
         android:allowBackup="true"
@@ -37,7 +37,7 @@
 
         <activity
             android:theme="@style/SplashScreenTheme"
-            android:name="com.hieupro.todolistapp.ActivitySplash"
+            android:name="com.hieupro.checklistnote.ActivitySplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -45,60 +45,60 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.hieupro.todolistapp.CategoryActivity"
+            android:name="com.hieupro.checklistnote.CategoryActivity"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.ActivityTheme"
+            android:name="com.hieupro.checklistnote.ActivityTheme"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.ActivitySearch"
+            android:name="com.hieupro.checklistnote.ActivitySearch"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.AddTaskActivity"
+            android:name="com.hieupro.checklistnote.AddTaskActivity"
             android:exported="false"/>
         <activity
             android:theme="@style/MainActivity"
-            android:name="com.hieupro.todolistapp.ActivityMain"
+            android:name="com.hieupro.checklistnote.ActivityMain"
             android:exported="false"/>
 
 
         <activity
-            android:name="com.hieupro.todolistapp.ActivityViewPager"
+            android:name="com.hieupro.checklistnote.ActivityViewPager"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.ActivityProfile"
+            android:name="com.hieupro.checklistnote.ActivityProfile"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.ActivityReminder"
+            android:name="com.hieupro.checklistnote.ActivityReminder"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.AddNoteActivity"
+            android:name="com.hieupro.checklistnote.AddNoteActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name="com.hieupro.todolistapp.ActivityArchived"
+            android:name="com.hieupro.checklistnote.ActivityArchived"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.TrashActivity"
+            android:name="com.hieupro.checklistnote.TrashActivity"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.Lock.ShowPasscodeActivity"
+            android:name="com.hieupro.checklistnote.Lock.ShowPasscodeActivity"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.Lock.PasswordOptionsActivity"
+            android:name="com.hieupro.checklistnote.Lock.PasswordOptionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.Lock.PasswordQuestionsActivity"
+            android:name="com.hieupro.checklistnote.Lock.PasswordQuestionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.hieupro.todolistapp.Lock.AddPasswordActivity"
+            android:name="com.hieupro.checklistnote.Lock.AddPasswordActivity"
             android:exported="false"/>
 
         <receiver
-            android:name="com.hieupro.todolistapp.ReminderClasses.RemindersBroadcastReceiver"
+            android:name="com.hieupro.checklistnote.ReminderClasses.RemindersBroadcastReceiver"
             android:exported="false"/>
-        <receiver android:name="com.hieupro.todolistapp.ReminderClasses.SnoozeReceivers"/>
-        <receiver android:name="com.hieupro.todolistapp.ReminderClasses.NotificationsCancelledReceiver"/>
+        <receiver android:name="com.hieupro.checklistnote.ReminderClasses.SnoozeReceivers"/>
+        <receiver android:name="com.hieupro.checklistnote.ReminderClasses.NotificationsCancelledReceiver"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
