@@ -54,9 +54,6 @@ public class ActivityArchived extends AppCompatActivity {
         this.binding = inflate;
         setContentView(inflate.getRoot());
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
 
         settheme();
         this.db = new MyHelperDb(this);

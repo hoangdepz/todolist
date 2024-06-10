@@ -66,9 +66,7 @@ public class ActivityReminder extends AppCompatActivity {
         this.binding = inflate;
         setContentView(inflate.getRoot());
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
+
 
         this.sharedPreferences = getSharedPreferences(PREFS_NAME, 0);
         settheme();

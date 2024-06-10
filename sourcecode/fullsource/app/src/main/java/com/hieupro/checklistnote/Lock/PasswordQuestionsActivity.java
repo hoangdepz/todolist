@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 import com.hieupro.checklistnote.ActivityMain;
-import com.hieupro.checklistnote.AdsGoogle;
 import com.hieupro.checklistnote.R;
 import com.hieupro.checklistnote.databinding.ActivityPasswordQuestionsBinding;
 
@@ -36,9 +35,7 @@ public class PasswordQuestionsActivity extends AppCompatActivity {
         this.binding = inflate;
         setContentView(inflate.getRoot());
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
+
 
         setStatusBarTransparent();
         settheme();

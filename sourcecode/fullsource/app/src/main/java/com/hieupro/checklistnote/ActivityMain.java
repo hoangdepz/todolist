@@ -60,9 +60,7 @@ public class ActivityMain extends AppCompatActivity {
             }
         }
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
+
 
         boolean booleanExtra = getIntent().getBooleanExtra("splash", false);
         this.a = booleanExtra;

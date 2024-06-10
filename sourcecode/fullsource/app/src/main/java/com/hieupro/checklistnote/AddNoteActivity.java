@@ -190,9 +190,7 @@ public class AddNoteActivity extends AppCompatActivity implements EditTextClickL
         this.binding = inflate;
         setContentView(inflate.getRoot());
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
+
 
         this.waveformView = (WaveformView) findViewById(R.id.waveformView);
         ControlMusic.getInstance(this).stopMusic();

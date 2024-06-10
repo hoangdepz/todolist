@@ -52,9 +52,7 @@ public class ActivitySearch extends AppCompatActivity {
         setContentView(inflate.getRoot());
 
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
+
 
 
         this.isTrue = getIntent().getBooleanExtra("true", false);

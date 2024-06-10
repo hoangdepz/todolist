@@ -13,7 +13,6 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.hieupro.checklistnote.AdsGoogle;
 import com.hieupro.checklistnote.R;
 import com.hieupro.checklistnote.databinding.ActivityPasswordOptionsBinding;
 
@@ -33,9 +32,7 @@ public class PasswordOptionsActivity extends AppCompatActivity {
         this.binding = inflate;
         setContentView(inflate.getRoot());
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
+
 
         settheme();
         this.binding.backArrow.setOnClickListener(new View.OnClickListener() { 

@@ -94,9 +94,6 @@ public class AddTaskActivity extends AppCompatActivity {
         this.binding = inflate;
         setContentView(inflate.getRoot());
 
-        AdsGoogle adsGoogle = new AdsGoogle(this);
-        adsGoogle.Banner_Show((RelativeLayout) findViewById(R.id.banner), this);
-        adsGoogle.Interstitial_Show_Counter(this);
 
         this.calendar1 = Calendar.getInstance();
         this.theme = getSharedPreferences("my_prefs", 0).getInt("my_key", 1);
