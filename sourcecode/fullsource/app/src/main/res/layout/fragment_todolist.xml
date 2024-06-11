@@ -3,110 +3,152 @@
     android:theme="@style/Base.Theme.TodoList"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <RelativeLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <RelativeLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:layout_marginBottom="10dp">
+
             <TextView
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
                 android:id="@+id/page_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                android:text="@string/app_name"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:fontFamily="@font/baloobhai2_semibold"
-                android:layout_marginHorizontal="25dp"/>
+                android:text="Todo List - Schedule"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
             <ImageView
                 android:id="@+id/searchBtn"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/search_icon"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="20dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginVertical="5dp"/>
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/search_icon" />
         </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginHorizontal="10dp"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="Search Task Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icSearch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/categoryRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/searchBox"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_below="@+id/toolbar"
-            android:layout_marginHorizontal="10dp"/>
+            android:layout_marginRight="10dp" />
+
         <androidx.core.widget.NestedScrollView
-            android:scrollbars="none"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/categoryRecyclerView">
+            android:layout_below="@+id/categoryRecyclerView"
+            android:scrollbars="none">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <TextView
-                    android:textSize="22sp"
-                    android:textColor="@color/black"
                     android:id="@+id/pending"
-                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/pending"
                     android:fontFamily="@font/baloobhai2_semibold"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginVertical="10dp"/>
+                    android:text="@string/pending"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:visibility="gone" />
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/taskRecyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/pending"/>
+                    android:layout_below="@+id/pending" />
+
                 <TextView
-                    android:textSize="22sp"
-                    android:textColor="@color/black"
                     android:id="@+id/completed"
-                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/taskRecyclerView"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/completed"
-                    android:layout_below="@+id/taskRecyclerView"
                     android:fontFamily="@font/baloobhai2_semibold"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginVertical="10dp"/>
+                    android:text="@string/completed"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:visibility="gone" />
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/checkedRecyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/completed"/>
+                    android:layout_below="@+id/completed" />
             </RelativeLayout>
         </androidx.core.widget.NestedScrollView>
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addTaskBtn"
-            android:background="@drawable/rectangle"
+            style="@style/RectangularShape"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="25dp"
-            android:src="@drawable/add"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="25dp"
-            android:layout_alignParentEnd="true"
-            app:elevation="15dp"
-            style="@style/RectangularShape"/>
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/add"
+            app:elevation="15dp" />
     </RelativeLayout>
 </RelativeLayout>

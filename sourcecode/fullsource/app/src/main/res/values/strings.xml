@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">Todo List - Schedule</string>
+<string name="app_name">Demo todo</string>
 <string name="save">Save</string>
 <string name="title">Title</string>
 <string name="start_typing_here">Start typing here</string>
