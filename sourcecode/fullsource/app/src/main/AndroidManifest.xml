@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <application
-        android:name="com.demo.noteapp.ApplicationEmojis"
+        android:name="com.demo.checklistnotedemo.ApplicationEmojis"
         android:theme="@style/Theme.TodoList"
 
         android:allowBackup="true"
@@ -34,7 +34,7 @@
 
         <activity
             android:theme="@style/SplashScreenTheme"
-            android:name="com.demo.noteapp.ActivitySplash"
+            android:name="com.demo.checklistnotedemo.ActivitySplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -42,60 +42,60 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.demo.noteapp.CategoryActivity"
+            android:name="com.demo.checklistnotedemo.CategoryActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.ActivityTheme"
+            android:name="com.demo.checklistnotedemo.ActivityTheme"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.ActivitySearch"
+            android:name="com.demo.checklistnotedemo.ActivitySearch"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.AddTaskActivity"
+            android:name="com.demo.checklistnotedemo.AddTaskActivity"
             android:exported="false"/>
         <activity
             android:theme="@style/MainActivity"
-            android:name="com.demo.noteapp.ActivityMain"
+            android:name="com.demo.checklistnotedemo.ActivityMain"
             android:exported="false"/>
 
 
         <activity
-            android:name="com.demo.noteapp.ActivityViewPager"
+            android:name="com.demo.checklistnotedemo.ActivityViewPager"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.ActivityProfile"
+            android:name="com.demo.checklistnotedemo.ActivityProfile"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.ActivityReminder"
+            android:name="com.demo.checklistnotedemo.ActivityReminder"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.AddNoteActivity"
+            android:name="com.demo.checklistnotedemo.AddNoteActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name="com.demo.noteapp.ActivityArchived"
+            android:name="com.demo.checklistnotedemo.ActivityArchived"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.TrashActivity"
+            android:name="com.demo.checklistnotedemo.TrashActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.Lock.ShowPasscodeActivity"
+            android:name="com.demo.checklistnotedemo.Lock.ShowPasscodeActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.Lock.PasswordOptionsActivity"
+            android:name="com.demo.checklistnotedemo.Lock.PasswordOptionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.Lock.PasswordQuestionsActivity"
+            android:name="com.demo.checklistnotedemo.Lock.PasswordQuestionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.noteapp.Lock.AddPasswordActivity"
+            android:name="com.demo.checklistnotedemo.Lock.AddPasswordActivity"
             android:exported="false"/>
 
         <receiver
-            android:name="com.demo.noteapp.ReminderClasses.RemindersBroadcastReceiver"
+            android:name="com.demo.checklistnotedemo.ReminderClasses.RemindersBroadcastReceiver"
             android:exported="false"/>
-        <receiver android:name="com.demo.noteapp.ReminderClasses.SnoozeReceivers"/>
-        <receiver android:name="com.demo.noteapp.ReminderClasses.NotificationsCancelledReceiver"/>
+        <receiver android:name="com.demo.checklistnotedemo.ReminderClasses.SnoozeReceivers"/>
+        <receiver android:name="com.demo.checklistnotedemo.ReminderClasses.NotificationsCancelledReceiver"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
