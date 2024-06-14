@@ -15,7 +15,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import com.itsxtt.patternlock.PatternLockView;
-import com.demo.checklistnotedemo.ActivityMain;
+import com.demo.checklistnotedemo.activity.ActivityMain;
 import com.demo.checklistnotedemo.R;
 import com.demo.checklistnotedemo.databinding.ActivityShowPasscodeBinding;
 import java.security.KeyStore;

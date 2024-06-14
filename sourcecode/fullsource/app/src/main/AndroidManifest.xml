@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <application
-        android:name="com.demo.checklistnotedemo.ApplicationEmojis"
+        android:name="com.demo.checklistnotedemo.activity.ApplicationEmojis"
         android:theme="@style/Theme.TodoList"
 
         android:allowBackup="true"
@@ -34,7 +34,7 @@
 
         <activity
             android:theme="@style/SplashScreenTheme"
-            android:name="com.demo.checklistnotedemo.ActivitySplash"
+            android:name="com.demo.checklistnotedemo.activity.ActivitySplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -42,41 +42,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.demo.checklistnotedemo.CategoryActivity"
+            android:name="com.demo.checklistnotedemo.activity.CategoryActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.checklistnotedemo.ActivityTheme"
+            android:name="com.demo.checklistnotedemo.activity.ActivityTheme"
             android:exported="false"/>
         <activity
-            android:name="com.demo.checklistnotedemo.ActivitySearch"
+            android:name="com.demo.checklistnotedemo.activity.ActivitySearch"
             android:exported="false"/>
         <activity
-            android:name="com.demo.checklistnotedemo.AddTaskActivity"
+            android:name="com.demo.checklistnotedemo.activity.AddTaskActivity"
             android:exported="false"/>
         <activity
             android:theme="@style/MainActivity"
-            android:name="com.demo.checklistnotedemo.ActivityMain"
+            android:name="com.demo.checklistnotedemo.activity.ActivityMain"
             android:exported="false"/>
 
 
         <activity
-            android:name="com.demo.checklistnotedemo.ActivityViewPager"
+            android:name="com.demo.checklistnotedemo.activity.ActivityViewPager"
             android:exported="false"/>
         <activity
-            android:name="com.demo.checklistnotedemo.ActivityProfile"
+            android:name="com.demo.checklistnotedemo.activity.ActivityProfile"
             android:exported="false"/>
         <activity
-            android:name="com.demo.checklistnotedemo.ActivityReminder"
+            android:name="com.demo.checklistnotedemo.activity.ActivityReminder"
             android:exported="false"/>
         <activity
-            android:name="com.demo.checklistnotedemo.AddNoteActivity"
+            android:name="com.demo.checklistnotedemo.activity.AddNoteActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name="com.demo.checklistnotedemo.ActivityArchived"
+            android:name="com.demo.checklistnotedemo.activity.ActivityArchived"
             android:exported="false"/>
         <activity
-            android:name="com.demo.checklistnotedemo.TrashActivity"
+            android:name="com.demo.checklistnotedemo.activity.TrashActivity"
             android:exported="false"/>
         <activity
             android:name="com.demo.checklistnotedemo.Lock.ShowPasscodeActivity"

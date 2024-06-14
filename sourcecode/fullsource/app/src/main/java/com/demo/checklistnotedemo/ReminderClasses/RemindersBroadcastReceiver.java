@@ -13,8 +13,8 @@ import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 import androidx.vectordrawable.graphics.drawable.PathInterpolatorCompat;
-import com.demo.checklistnotedemo.ActivityMain;
-import com.demo.checklistnotedemo.AddNoteActivity;
+import com.demo.checklistnotedemo.activity.ActivityMain;
+import com.demo.checklistnotedemo.activity.AddNoteActivity;
 import com.demo.checklistnotedemo.R;
 import com.demo.checklistnotedemo.paramsClasses.Param;
 

@@ -1,4 +1,4 @@
-package com.demo.checklistnotedemo;
+package com.demo.checklistnotedemo.activity;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;

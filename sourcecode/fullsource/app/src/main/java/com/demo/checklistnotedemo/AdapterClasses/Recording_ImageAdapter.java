@@ -28,7 +28,7 @@ import com.aghajari.emojiview.view.AXEmojiEditText;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.demo.checklistnotedemo.ActivityViewPager;
+import com.demo.checklistnotedemo.activity.ActivityViewPager;
 import com.demo.checklistnotedemo.DataHolderClasses.HolderData;
 import com.demo.checklistnotedemo.Listeners.EditTextClickListeners;
 import com.demo.checklistnotedemo.Models.ImageModels;

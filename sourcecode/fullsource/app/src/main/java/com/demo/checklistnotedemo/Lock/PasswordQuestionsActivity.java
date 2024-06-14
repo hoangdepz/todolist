@@ -13,7 +13,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
-import com.demo.checklistnotedemo.ActivityMain;
+import com.demo.checklistnotedemo.activity.ActivityMain;
 import com.demo.checklistnotedemo.R;
 import com.demo.checklistnotedemo.databinding.ActivityPasswordQuestionsBinding;
 

@@ -1,4 +1,4 @@
-package com.demo.checklistnotedemo;
+package com.demo.checklistnotedemo.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -49,6 +49,7 @@ import com.demo.checklistnotedemo.Lock.PatternDialog;
 import com.demo.checklistnotedemo.Lock.SharedPrefrence;
 import com.demo.checklistnotedemo.Models.CategoryModel;
 import com.demo.checklistnotedemo.Models.TODOModels;
+import com.demo.checklistnotedemo.R;
 import com.demo.checklistnotedemo.ReminderClasses.RemindersBroadcastReceiver;
 import com.demo.checklistnotedemo.databinding.ActivityAddTaskBinding;
 import com.demo.checklistnotedemo.paramsClasses.Param;

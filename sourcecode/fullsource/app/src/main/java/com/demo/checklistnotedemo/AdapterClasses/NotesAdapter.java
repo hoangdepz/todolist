@@ -21,13 +21,13 @@ import androidx.cardview.widget.CardView;
 
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
-import com.demo.checklistnotedemo.ActivityArchived;
-import com.demo.checklistnotedemo.AddNoteActivity;
+import com.demo.checklistnotedemo.activity.ActivityArchived;
+import com.demo.checklistnotedemo.activity.AddNoteActivity;
 import com.demo.checklistnotedemo.DatabaseClasses.MyHelperImage;
 import com.demo.checklistnotedemo.Models.ImageModels;
 import com.demo.checklistnotedemo.Models.Notes;
 import com.demo.checklistnotedemo.R;
-import com.demo.checklistnotedemo.TrashActivity;
+import com.demo.checklistnotedemo.activity.TrashActivity;
 import com.demo.checklistnotedemo.paramsClasses.Param;
 import java.text.SimpleDateFormat;
 import java.util.Date;

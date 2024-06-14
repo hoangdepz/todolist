@@ -1,4 +1,4 @@
-package com.demo.checklistnotedemo;
+package com.demo.checklistnotedemo.activity;
 
 import android.content.Context;
 import android.content.Intent;

@@ -20,11 +20,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import java.util.Calendar;
 import com.haibin.calendarview.CalendarView;
-import com.demo.checklistnotedemo.ActivityMain;
+import com.demo.checklistnotedemo.activity.ActivityMain;
 import com.demo.checklistnotedemo.AdapterClasses.AdapterTODO;
 import com.demo.checklistnotedemo.AdapterClasses.NotesAdapter;
-import com.demo.checklistnotedemo.AddNoteActivity;
-import com.demo.checklistnotedemo.AddTaskActivity;
+import com.demo.checklistnotedemo.activity.AddNoteActivity;
+import com.demo.checklistnotedemo.activity.AddTaskActivity;
 import com.demo.checklistnotedemo.DatabaseClasses.MyHelperDb;
 import com.demo.checklistnotedemo.DatabaseClasses.TaskHelper;
 import com.demo.checklistnotedemo.Listeners.onTaskChanges;

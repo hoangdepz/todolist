@@ -1,4 +1,4 @@
-package com.demo.checklistnotedemo;
+package com.demo.checklistnotedemo.activity;
 
 import android.Manifest;
 import android.content.ActivityNotFoundException;
@@ -28,6 +28,7 @@ import com.demo.checklistnotedemo.Lock.LockHolder;
 import com.demo.checklistnotedemo.Lock.PasswordOptionsActivity;
 import com.demo.checklistnotedemo.Lock.PatternDialog;
 import com.demo.checklistnotedemo.Lock.SharedPrefrence;
+import com.demo.checklistnotedemo.R;
 import com.demo.checklistnotedemo.databinding.MainActivityBinding;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;

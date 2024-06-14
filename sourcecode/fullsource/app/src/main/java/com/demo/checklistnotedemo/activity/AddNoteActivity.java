@@ -1,4 +1,4 @@
-package com.demo.checklistnotedemo;
+package com.demo.checklistnotedemo.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
