@@ -51,52 +51,14 @@ public class PasswordOptionsActivity extends AppCompatActivity {
             this.binding.passwordSwitch.getTrackDrawable().setColorFilter(getResources().getColor(R.color.switchoff), PorterDuff.Mode.SRC_IN);
         }
         if (SharedPrefrence.getFingerPrintEnabled(this) && !SharedPrefrence.getSavedPattern(this).isEmpty()) {
-            this.binding.fingerprintswitch.setChecked(true);
+//            this.binding.fingerprintswitch.setChecked(true);
             setthemefingerSwitch();
         } else {
-            this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(getResources().getColor(R.color.switchoff), PorterDuff.Mode.SRC_IN);
+//            this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(getResources().getColor(R.color.switchoff), PorterDuff.Mode.SRC_IN);
         }
 
         final FingerprintManager m = (FingerprintManager)getSystemService(Context.FINGERPRINT_SERVICE);
-//        final FingerprintManager m = TrashActivity$$ExternalSyntheticApiModelOutline0.m(getSystemService(Context.FINGERPRINT_SERVICE));
-        this.binding.fingerprintswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override 
-            public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                boolean isHardwareDetected;
-                boolean hasEnrolledFingerprints;
-                if (z) {
-                    PasswordOptionsActivity.this.setthemefingerSwitch();
-                    FingerprintManager fingerprintManager = m;
-                    if (fingerprintManager == null) {
-                        PasswordOptionsActivity passwordOptionsActivity = PasswordOptionsActivity.this;
-                        Toast.makeText(passwordOptionsActivity, passwordOptionsActivity.getString(R.string.your_device_has_no_fingerprint_sensor), Toast.LENGTH_SHORT).show();
-                        PasswordOptionsActivity.this.binding.fingerprintswitch.setChecked(false);
-                        PasswordOptionsActivity.this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(PasswordOptionsActivity.this.getResources().getColor(R.color.switchoff), PorterDuff.Mode.SRC_IN);
-                    } else {
-                        isHardwareDetected = fingerprintManager.isHardwareDetected();
-                        if (!isHardwareDetected) {
-                            PasswordOptionsActivity passwordOptionsActivity2 = PasswordOptionsActivity.this;
-                            Toast.makeText(passwordOptionsActivity2, passwordOptionsActivity2.getString(R.string.your_device_has_no_fingerprint_sensor), Toast.LENGTH_SHORT).show();
-                            PasswordOptionsActivity.this.binding.fingerprintswitch.setChecked(false);
-                            PasswordOptionsActivity.this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(PasswordOptionsActivity.this.getResources().getColor(R.color.switchoff), PorterDuff.Mode.SRC_IN);
-                        } else {
-                            hasEnrolledFingerprints = m.hasEnrolledFingerprints();
-                            if (!hasEnrolledFingerprints) {
-                                PasswordOptionsActivity passwordOptionsActivity3 = PasswordOptionsActivity.this;
-                                Toast.makeText(passwordOptionsActivity3, passwordOptionsActivity3.getString(R.string.fingerprint_is_not_enabled), Toast.LENGTH_SHORT).show();
-                                PasswordOptionsActivity.this.binding.fingerprintswitch.setChecked(false);
-                                PasswordOptionsActivity.this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(PasswordOptionsActivity.this.getResources().getColor(R.color.switchoff), PorterDuff.Mode.SRC_IN);
-                            }
-                        }
-                    }
-                    z = false;
-                } else {
-                    PasswordOptionsActivity.this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(PasswordOptionsActivity.this.getResources().getColor(R.color.switchoff), PorterDuff.Mode.SRC_IN);
-                }
-                SharedPrefrence.setFingerprintEnabled(z, PasswordOptionsActivity.this);
-            }
-        });
-        this.binding.passwordSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { 
+        this.binding.passwordSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override 
             public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
                 if (!z) {
@@ -142,26 +104,26 @@ public class PasswordOptionsActivity extends AppCompatActivity {
     
     public void disableChangePassword() {
         this.binding.changePasswordOption.setEnabled(false);
-        this.binding.fingerprintswitch.setEnabled(false);
+//        this.binding.fingerprintswitch.setEnabled(false);
         this.binding.thirdCard.setEnabled(false);
-        this.binding.fingerprintswitch.setChecked(true);
+//        this.binding.fingerprintswitch.setChecked(true);
         this.binding.SecondCard.setCardBackgroundColor(getResources().getColor(R.color.backgroundcolor));
         this.binding.thirdCard.setCardBackgroundColor(getResources().getColor(R.color.backgroundcolor));
-        this.binding.fourthCard.setCardBackgroundColor(getResources().getColor(R.color.backgroundcolor));
+//        this.binding.fourthCard.setCardBackgroundColor(getResources().getColor(R.color.backgroundcolor));
     }
 
     
     public void enableChangePassword() {
         this.binding.changePasswordOption.setEnabled(true);
-        this.binding.fingerprintswitch.setEnabled(true);
+//        this.binding.fingerprintswitch.setEnabled(true);
         if (this.theme == 5) {
             this.binding.SecondCard.setCardBackgroundColor(getResources().getColor(R.color.light_black));
             this.binding.thirdCard.setCardBackgroundColor(getResources().getColor(R.color.light_black));
-            this.binding.fourthCard.setCardBackgroundColor(getResources().getColor(R.color.light_black));
+//            this.binding.fourthCard.setCardBackgroundColor(getResources().getColor(R.color.light_black));
         } else {
             this.binding.SecondCard.setCardBackgroundColor(getResources().getColor(R.color.white));
             this.binding.thirdCard.setCardBackgroundColor(getResources().getColor(R.color.white));
-            this.binding.fourthCard.setCardBackgroundColor(getResources().getColor(R.color.white));
+//            this.binding.fourthCard.setCardBackgroundColor(getResources().getColor(R.color.white));
         }
     }
 
@@ -224,7 +186,7 @@ public class PasswordOptionsActivity extends AppCompatActivity {
         this.binding.firstCard.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(i)));
         this.binding.SecondCard.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(i)));
         this.binding.thirdCard.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(i)));
-        this.binding.fourthCard.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(i)));
+//        this.binding.fourthCard.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(i)));
     }
 
     public void settheme() {
@@ -297,7 +259,7 @@ public class PasswordOptionsActivity extends AppCompatActivity {
     }
 
     public void isSwitchColor(int i) {
-        this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(getResources().getColor(i), PorterDuff.Mode.SRC_IN);
+//        this.binding.fingerprintswitch.getTrackDrawable().setColorFilter(getResources().getColor(i), PorterDuff.Mode.SRC_IN);
     }
 
     public void isSwitchChangeColor(int i) {
@@ -448,13 +410,13 @@ public class PasswordOptionsActivity extends AppCompatActivity {
         this.binding.titleToolbarTv.setTextColor(getResources().getColor(i));
         this.binding.enablePas.setTextColor(getResources().getColor(i));
         this.binding.changepas.setTextColor(getResources().getColor(i));
-        this.binding.biometric.setTextColor(getResources().getColor(i));
+//        this.binding.biometric.setTextColor(getResources().getColor(i));
         this.binding.setSecurity.setTextColor(getResources().getColor(i));
         this.binding.backArrow.setImageTintList(ColorStateList.valueOf(getResources().getColor(i)));
         this.binding.keyImg.setImageTintList(ColorStateList.valueOf(getResources().getColor(i)));
         this.binding.lockImg.setImageTintList(ColorStateList.valueOf(getResources().getColor(i)));
         this.binding.patternImg.setImageTintList(ColorStateList.valueOf(getResources().getColor(i)));
-        this.binding.biometericimg.setImageTintList(ColorStateList.valueOf(getResources().getColor(i)));
+//        this.binding.biometericimg.setImageTintList(ColorStateList.valueOf(getResources().getColor(i)));
     }
 
     public void setbackgroundcolor(int i) {

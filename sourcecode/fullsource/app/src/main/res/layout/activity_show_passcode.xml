@@ -56,14 +56,14 @@
                 app:plv_selectedDotColor="@color/white"
                 app:plv_selectedDotRadiusRatio="0.2"/>
 
-            <pl.droidsonroids.gif.GifImageView
-                android:id="@+id/finger"
-                android:visibility="gone"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/baseline_fingerprint_24"
-                android:tint="@color/white"/>
+<!--            <pl.droidsonroids.gif.GifImageView-->
+<!--                android:id="@+id/finger"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@drawable/baseline_fingerprint_24"-->
+<!--                android:tint="@color/white"/>-->
             <TextView
                 android:textColor="@color/white"
                 android:id="@+id/forgotPasswordTv"

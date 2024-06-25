@@ -57,7 +57,7 @@ public class ShowPasscodeActivity extends FragmentActivity {
         if (SharedPrefrence.getFingerPrintEnabled(this)) {
             fingerPrint();
         } else {
-            this.binding.finger.setVisibility(View.GONE);
+//            this.binding.finger.setVisibility(View.GONE);
         }
         if (SharedPrefrence.getSavedPattern(this).equals("") || !SharedPrefrence.getPasswordSwitch(this)) {
             startActivity(new Intent(this, (Class<?>) ActivityMain.class));
@@ -129,7 +129,7 @@ public class ShowPasscodeActivity extends FragmentActivity {
     }
 
     public void fingerPrint() {
-        this.binding.finger.setVisibility(View.VISIBLE);
+//        this.binding.finger.setVisibility(View.VISIBLE);
         generateKey();
         initCipher();
         startFingerprintAuthentication();
@@ -142,7 +142,7 @@ public class ShowPasscodeActivity extends FragmentActivity {
         if (SharedPrefrence.getFingerPrintEnabled(this)) {
             fingerPrint();
         } else {
-            this.binding.finger.setVisibility(View.GONE);
+//            this.binding.finger.setVisibility(View.GONE);
         }
     }
 
@@ -173,12 +173,12 @@ public class ShowPasscodeActivity extends FragmentActivity {
                     LockHolder.getInstance().setboolean(false);
                     ShowPasscodeActivity.this.finish();
                 }
-                ShowPasscodeActivity.this.binding.finger.setImageTintList(ColorStateList.valueOf(ShowPasscodeActivity.this.getResources().getColor(R.color.white)));
+//                ShowPasscodeActivity.this.binding.finger.setImageTintList(ColorStateList.valueOf(ShowPasscodeActivity.this.getResources().getColor(R.color.white)));
             }
 
             public void onAuthenticationFailed() {
                 super.onAuthenticationFailed();
-                ShowPasscodeActivity.this.binding.finger.setImageTintList(ColorStateList.valueOf(ShowPasscodeActivity.this.getResources().getColor(R.color.redcolor)));
+//                ShowPasscodeActivity.this.binding.finger.setImageTintList(ColorStateList.valueOf(ShowPasscodeActivity.this.getResources().getColor(R.color.redcolor)));
             }
         }, null);
     }
