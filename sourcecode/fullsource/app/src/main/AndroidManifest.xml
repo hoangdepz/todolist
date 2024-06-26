@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
 
     <application
-        android:name="com.demo.mynote.activity.ApplicationEmojis"
+        android:name="com.demo.exampleapp.activity.ApplicationEmojis"
         android:theme="@style/Theme.TodoList"
 
         android:allowBackup="true"
@@ -32,7 +32,7 @@
 
         <activity
             android:theme="@style/SplashScreenTheme"
-            android:name="com.demo.mynote.activity.ActivitySplash"
+            android:name="com.demo.exampleapp.activity.ActivitySplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -40,60 +40,60 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.demo.mynote.activity.CategoryActivity"
+            android:name="com.demo.exampleapp.activity.CategoryActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.activity.ActivityTheme"
+            android:name="com.demo.exampleapp.activity.ActivityTheme"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.activity.ActivitySearch"
+            android:name="com.demo.exampleapp.activity.ActivitySearch"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.activity.AddTaskActivity"
+            android:name="com.demo.exampleapp.activity.AddTaskActivity"
             android:exported="false"/>
         <activity
             android:theme="@style/MainActivity"
-            android:name="com.demo.mynote.activity.ActivityMain"
+            android:name="com.demo.exampleapp.activity.ActivityMain"
             android:exported="false"/>
 
 
         <activity
-            android:name="com.demo.mynote.activity.ActivityViewPager"
+            android:name="com.demo.exampleapp.activity.ActivityViewPager"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.activity.ActivityProfile"
+            android:name="com.demo.exampleapp.activity.ActivityProfile"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.activity.ActivityReminder"
+            android:name="com.demo.exampleapp.activity.ActivityReminder"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.activity.AddNoteActivity"
+            android:name="com.demo.exampleapp.activity.AddNoteActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name="com.demo.mynote.activity.ActivityArchived"
+            android:name="com.demo.exampleapp.activity.ActivityArchived"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.activity.TrashActivity"
+            android:name="com.demo.exampleapp.activity.TrashActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.Lock.ShowPasscodeActivity"
+            android:name="com.demo.exampleapp.Lock.ShowPasscodeActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.Lock.PasswordOptionsActivity"
+            android:name="com.demo.exampleapp.Lock.PasswordOptionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.Lock.PasswordQuestionsActivity"
+            android:name="com.demo.exampleapp.Lock.PasswordQuestionsActivity"
             android:exported="false"/>
         <activity
-            android:name="com.demo.mynote.Lock.AddPasswordActivity"
+            android:name="com.demo.exampleapp.Lock.AddPasswordActivity"
             android:exported="false"/>
 
         <receiver
-            android:name="com.demo.mynote.ReminderClasses.RemindersBroadcastReceiver"
+            android:name="com.demo.exampleapp.ReminderClasses.RemindersBroadcastReceiver"
             android:exported="false"/>
-        <receiver android:name="com.demo.mynote.ReminderClasses.SnoozeReceivers"/>
-        <receiver android:name="com.demo.mynote.ReminderClasses.NotificationsCancelledReceiver"/>
+        <receiver android:name="com.demo.exampleapp.ReminderClasses.SnoozeReceivers"/>
+        <receiver android:name="com.demo.exampleapp.ReminderClasses.NotificationsCancelledReceiver"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
