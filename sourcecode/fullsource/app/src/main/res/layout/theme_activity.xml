@@ -1,106 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_above="@id/banner1"
-    >
-    <RelativeLayout
+    android:layout_above="@id/banner1">
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
-        <ImageView
-            android:id="@+id/backhome"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/back"
-            android:layout_marginStart="10dp"/>
-        <TextView
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/themes"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/baloobhai2_semibold"
-            android:layout_marginStart="10dp"/>
-    </RelativeLayout>
+        android:layout_marginTop="30dp"
+        android:elevation="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backhome"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/baloobhai2_semibold"
+                android:text="@string/themes"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
     <ProgressBar
         android:id="@+id/prograss"
-        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:indeterminateTint="@color/green"/>
+        android:indeterminateTint="@color/green"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll"
-        android:scrollbars="none"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_height="0dp"
         android:layout_below="@+id/toolbar"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <TextView
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:id="@+id/smooth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/smooth"
-                android:fontFamily="@font/baloobhai2_semibold"
-                android:layout_marginStart="5dp"/>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/themeRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_below="@+id/smooth"/>
-            <TextView
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:id="@+id/modern"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/modern"
-                android:layout_below="@+id/themeRecyclerView"
-                android:fontFamily="@font/baloobhai2_semibold"
-                android:layout_marginStart="5dp"/>
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/modernRecyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_below="@+id/modern"/>
+                android:layout_marginTop="5dp" />
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
-
-
-    <RelativeLayout
-        android:id="@+id/banner1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center">
-
-        <RelativeLayout
-            android:id="@+id/banner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:gravity="center" />
-    </RelativeLayout>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

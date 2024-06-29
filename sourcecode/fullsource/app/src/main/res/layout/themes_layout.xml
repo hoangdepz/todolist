@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/themeCardView"
-    android:background="@color/white"
-    android:layout_width="wrap_content"
-    android:layout_height="69dp"
-    android:layout_marginLeft="20dp"
-    android:layout_marginTop="9dp"
-    android:layout_marginRight="20dp"
-    android:layout_marginStart="5dp"
-    android:layout_marginHorizontal="20dp"
-    app:cardBackgroundColor="@android:color/transparent"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="0dp">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nameTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Name theme"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/themeCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTheme">
+
         <ImageView
             android:id="@+id/themeImage"
-            android:background="@drawable/theme7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"/>
-        <ImageView
-            android:id="@+id/tick"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/tick"
-            android:layout_centerInParent="true"/>
-    </RelativeLayout>
-</com.google.android.material.card.MaterialCardView>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/im_theme_cool"
+            android:scaleType="centerCrop" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
