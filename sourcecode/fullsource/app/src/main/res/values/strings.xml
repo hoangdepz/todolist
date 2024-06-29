@@ -23,8 +23,7 @@
 <string name="enable_pass_code">Enable Pass Code</string>
 <string name="change_passcode">change passcode</string>
 <string name="set_up_a_security_question">Set up a security</string>
-<string name="biometric_authentication">Enabled fingerprint</string>
-<string name="question">question</string>
+    <string name="question">question</string>
 <string name="this_question_is_used_to_verify_your_identity_in_case_you_forget_your_passcode">This question is used to verify your identity in case you forget your passcode</string>
 <string name="draw_your_unlock_pattern">Draw your unlock pattern</string>
 <string name="forgot_password">forgot password</string>
@@ -69,9 +68,7 @@
 <string name="camera">Camera</string>
 <string name="gallery">Gallery</string>
 <string name="to_do_list">To do List</string>
-<string name="smooth">Smooth</string>
-<string name="modern">Modern</string>
-<string name="pending">Pending</string>
+    <string name="pending">Pending</string>
 <string name="completed">Completed</string>
 <string name="edit">Edit</string>
 <string name="mark_as_done">Mark as Done</string>
@@ -108,8 +105,7 @@
 <string name="draw_the_unlock_pattern_again_to_confirm_it">Draw the unlock pattern again to confirm it</string>
 <string name="pattern_do_not_match_with_previous">Pattern do not match with previous</string>
 <string name="your_device_has_no_fingerprint_sensor">Your device has no fingerprint sensor</string>
-<string name="fingerprint_is_not_enabled">Fingerprint is not enabled</string>
-<string name="what_is_your_favourite_color">What is your favourite color</string>
+    <string name="what_is_your_favourite_color">What is your favourite color</string>
 <string name="what_is_your_favourite_food">What is your favourite food</string>
 <string name="what_is_your_pet_name">What is your pet name</string>
 <string name="ok">ok</string>
