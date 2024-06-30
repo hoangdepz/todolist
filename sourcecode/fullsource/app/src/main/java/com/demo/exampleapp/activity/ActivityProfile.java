@@ -303,39 +303,6 @@ public class ActivityProfile extends AppCompatActivity {
         } else if (i == 6) {
             setbackgroundcolor(getResources().getColor(R.color.full_light_parrot));
             ischeckedColor(R.color.parrot);
-        } else if (i == 7) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_7));
-            ischeckedColor(R.color.themedark7);
-        } else if (i == 8) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_8));
-            ischeckedColor(R.color.themedark8);
-        } else if (i == 9) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_9));
-            ischeckedColor(R.color.themedark9);
-        } else if (i == 10) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_10));
-            ischeckedColor(R.color.themedark10);
-        } else if (i == 11) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_11));
-            ischeckedColor(R.color.themedark11);
-        } else if (i == 12) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_12));
-            ischeckedColor(R.color.themedark12);
-        } else if (i == 13) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_13));
-            ischeckedColor(R.color.themedark13);
-        } else if (i == 14) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_14));
-            ischeckedColor(R.color.themedark14);
-        } else if (i == 15) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_15));
-            ischeckedColor(R.color.themedark15);
-        } else if (i == 16) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_16));
-            ischeckedColor(R.color.themedark16);
-        } else if (i == 17) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_17));
-            ischeckedColor(R.color.themedark17);
         }
         if (i == 5) {
             cardBackground(R.color.light_black);

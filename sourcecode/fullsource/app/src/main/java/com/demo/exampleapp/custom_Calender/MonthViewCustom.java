@@ -104,45 +104,6 @@ public class MonthViewCustom extends MonthView {
             this.backgroundPaint.setColor(getResources().getColor(R.color.parrot));
             return;
         }
-        if (i2 == 7) {
-            theme(R.color.themedark7);
-            return;
-        }
-        if (i2 == 8) {
-            theme(R.color.themedark8);
-            return;
-        }
-        if (i2 == 9) {
-            theme(R.color.themedark9);
-            return;
-        }
-        if (i2 == 10) {
-            theme(R.color.themedark10);
-            return;
-        }
-        if (i2 == 11) {
-            theme(R.color.themedark11);
-            return;
-        }
-        if (i2 == 12) {
-            theme(R.color.themedark12);
-            return;
-        }
-        if (i2 == 13) {
-            theme(R.color.themedark13);
-            return;
-        }
-        if (i2 == 14) {
-            theme(R.color.themedark14);
-            return;
-        }
-        if (i2 == 15) {
-            theme(R.color.themedark15);
-        } else if (i2 == 16) {
-            theme(R.color.themedark16);
-        } else if (i2 == 17) {
-            theme(R.color.themedark17);
-        }
     }
 
     private int dipToPx(Context context, float f) {

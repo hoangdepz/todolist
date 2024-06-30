@@ -109,45 +109,7 @@ public class AdapterColor extends RecyclerView.Adapter<AdapterColor.ViewHolder> 
                 addButton(R.color.parrot);
                 return;
             }
-            if (i == 7) {
-                addButton(R.color.themedark7);
-                return;
-            }
-            if (i == 8) {
-                addButton(R.color.themedark8);
-                return;
-            }
-            if (i == 9) {
-                addButton(R.color.themedark9);
-                return;
-            }
-            if (i == 10) {
-                addButton(R.color.themedark10);
-                return;
-            }
-            if (i == 11) {
-                addButton(R.color.themedark11);
-                return;
-            }
-            if (i == 12) {
-                addButton(R.color.themedark12);
-                return;
-            }
-            if (i == 13) {
-                addButton(R.color.themedark13);
-                return;
-            }
-            if (i == 14) {
-                addButton(R.color.themedark14);
-                return;
-            }
-            if (i == 15) {
-                addButton(R.color.themedark15);
-            } else if (i == 16) {
-                addButton(R.color.themedark16);
-            } else if (i == 17) {
-                addButton(R.color.themedark17);
-            }
+
         }
 
         public void addButton(int i) {

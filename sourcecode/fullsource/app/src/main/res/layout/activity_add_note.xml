@@ -2,353 +2,388 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
 
-<RelativeLayout
-    android:layout_above="@id/banner1"
-    android:id="@+id/noteDetailActivity"
-    android:padding="0dp"
-    android:fitsSystemWindows="true"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="0dp">
     <RelativeLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/noteDetailActivity"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:id="@+id/title_bar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:id="@+id/relativeTitleBarLayout"
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp">
-                <ImageView
-                    android:id="@+id/bell"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/bell"
-                    android:layout_marginEnd="20dp"
-                    android:layout_toStartOf="@+id/saveNoteBtn"/>
-                <ImageView
-                    android:id="@+id/backhome"
-                    android:paddingTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/back"
-                    android:layout_centerVertical="true"
-                    app:tint="@color/black"/>
-                <TextView
-                    android:textSize="17sp"
-                    android:textColor="@color/white"
-                    android:id="@+id/saveNoteBtn"
-                    android:background="@drawable/save_btn_bg"
-                    android:padding="2dp"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/save"
-                    android:fontFamily="@font/baloobhai2_semibold"
-                    android:textAlignment="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_alignParentEnd="true"
-                    android:backgroundTint="@color/green"/>
-            </RelativeLayout>
-        </LinearLayout>
-        <androidx.core.widget.NestedScrollView
-            android:id="@+id/scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true"
-            android:layout_above="@+id/bottomnavigation"
-            android:layout_below="@+id/title_bar_layout"
-            android:windowSoftInputMode="adjustPan|stateHidden">
-            <RelativeLayout
-                android:orientation="vertical"
-                android:id="@+id/middlelayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/title_bar_layout">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:id="@+id/lLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <RelativeLayout
-                        android:orientation="horizontal"
-                        android:id="@+id/datePickerButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"
-                            android:id="@+id/date"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="29"
-                            android:layout_centerVertical="true"
-                            android:fontFamily="@font/baloobhai2_regular"
-                            android:layout_marginStart="10dp"/>
-                        <View
-                            android:id="@+id/view"
-                            android:background="@color/black"
-                            android:layout_width="35dp"
-                            android:layout_height="2dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_below="@+id/date"
-                            android:layout_marginHorizontal="10dp"/>
-                        <TextView
-                            android:textSize="16sp"
-                            android:textColor="@color/black"
-                            android:id="@+id/monthyear"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Aug 2023"
-                            android:layout_centerVertical="true"
-                            android:fontFamily="@font/baloobhai2_regular"
-                            android:layout_marginStart="5dp"
-                            android:layout_toEndOf="@+id/date"/>
-                        <ImageView
-                            android:id="@+id/dateBtn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_toEndOf="@+id/monthyear"
-                            app:srcCompat="@drawable/date_picker"/>
-                    </RelativeLayout>
-                    <com.aghajari.emojiview.view.AXEmojiEditText
-                        android:textSize="22sp"
-                        android:textStyle="bold"
-                        android:textColor="#000000"
-                        android:textColorHint="#747474"
-                        android:id="@+id/titleedittxt"
-                        android:background="@drawable/edit_txt"
-                        android:padding="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/title"
-                        android:fontFamily="@font/baloobhai2_regular"/>
-                    <com.aghajari.emojiview.view.AXEmojiEditText
-                        android:textSize="20sp"
-                        android:textColor="#000000"
-                        android:textColorHint="@color/text_hint"
-                        android:gravity="top"
-                        android:id="@+id/contentedittxt"
-                        android:background="@drawable/edit_txt"
-                        android:padding="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/start_typing_here"
-                        android:minLines="1"
-                        android:fontFamily="@font/baloobhai2_regular"/>
-                    <RelativeLayout
-                        android:id="@+id/recLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerImageView"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginBottom="5dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"/>
-                    </RelativeLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:id="@+id/root_view"
-                    android:scrollbars="none"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/lLayout"
-                    android:layout_alignParentBottom="true"/>
-            </RelativeLayout>
-        </androidx.core.widget.NestedScrollView>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:id="@+id/bottomnavigation"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginTop="5dp"
-            android:layout_alignParentBottom="true">
-            <ImageView
-                android:id="@+id/emoji"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/emoji"/>
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/image"/>
-            <ImageView
-                android:id="@+id/fonts"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/font"/>
-            <ImageView
-                android:id="@+id/paint"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/paint"/>
-            <ImageView
-                android:id="@+id/mic"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/mic"/>
-        </LinearLayout>
-    </RelativeLayout>
-    <FrameLayout
-        android:id="@+id/transparentLayout"
-        android:background="#d0000000"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_above="@id/banner1"
+        android:layout_margin="0dp"
+        android:fitsSystemWindows="true"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <com.demo.exampleapp.AudioRecorder.WaveformView
-                android:id="@+id/waveformView"
+
+            <LinearLayout
+                android:id="@+id/title_bar_layout"
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/relativeTitleBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="8dp">
+
+                    <ImageView
+                        android:id="@+id/bell"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@+id/saveNoteBtn"
+                        android:src="@drawable/bell" />
+
+                    <ImageView
+                        android:id="@+id/backhome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/back"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/saveNoteBtn"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/save_btn_bg"
+                        android:backgroundTint="@color/green"
+                        android:fontFamily="@font/baloobhai2_semibold"
+                        android:padding="2dp"
+                        android:text="@string/save"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottomnavigation"
+                android:layout_below="@+id/title_bar_layout"
+                android:fillViewport="true"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+
+                <RelativeLayout
+                    android:id="@+id/middlelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_bar_layout"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                        <RelativeLayout
+                            android:id="@+id/datePickerButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/baloobhai2_regular"
+                                android:text="29"
+                                android:textColor="@color/black"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="35dp"
+                                android:layout_height="2dp"
+                                android:layout_below="@+id/date"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/black" />
+
+                            <TextView
+                                android:id="@+id/monthyear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toEndOf="@+id/date"
+                                android:fontFamily="@font/baloobhai2_regular"
+                                android:text="Aug 2023"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/dateBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_toEndOf="@+id/monthyear"
+                                app:srcCompat="@drawable/date_picker" />
+                        </RelativeLayout>
+
+                        <com.aghajari.emojiview.view.AXEmojiEditText
+                            android:id="@+id/titleedittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_txt"
+                            android:fontFamily="@font/baloobhai2_regular"
+                            android:hint="@string/title"
+                            android:padding="10dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#747474"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <com.aghajari.emojiview.view.AXEmojiEditText
+                            android:id="@+id/contentedittxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_txt"
+                            android:fontFamily="@font/baloobhai2_regular"
+                            android:gravity="top"
+                            android:hint="@string/start_typing_here"
+                            android:minLines="1"
+                            android:padding="10dp"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="20sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/recLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/root_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lLayout"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/bottomnavigation"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
                 android:layout_alignParentBottom="true"
-                app:layout_constraintBottom_toTopOf="@+id/recordst"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_time"/>
-            <ImageView
-                android:id="@+id/recordst"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginBottom="100dp"
-                android:src="@drawable/recording_start"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
-            <ImageView
-                android:id="@+id/closerec"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="24dp"
-                android:src="@drawable/baseline_close_24"
-                android:layout_marginStart="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/white"/>
-            <TextView
-                android:textSize="40sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:id="@+id/tv_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="50dp"
-                android:text="00:00:00"
-                android:fontFamily="@font/baloobhai2_regular"
-                app:layout_constraintBottom_toTopOf="@+id/tapstartTextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.24"/>
-            <TextView
-                android:textSize="18sp"
-                android:textColor="#ffffff"
-                android:id="@+id/tapstartTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="@string/tap_to_start_recording"
-                android:fontFamily="@font/baloobhai2_regular"
-                app:layout_constraintEnd_toEndOf="@+id/recordst"
-                app:layout_constraintStart_toStartOf="@+id/recordst"
-                app:layout_constraintTop_toBottomOf="@+id/recordst"/>
-            <ImageView
-                android:id="@+id/closeButton"
-                android:visibility="gone"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/baseline_close_24"
-                android:layout_marginEnd="32dp"
-                app:layout_constraintBottom_toBottomOf="@+id/recordst"
-                app:layout_constraintEnd_toStartOf="@+id/recordst"
-                app:layout_constraintTop_toTopOf="@+id/recordst"
-                app:tint="@color/white"/>
-            <ImageView
-                android:id="@+id/tick"
-                android:visibility="gone"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="32dp"
-                android:backgroundTint="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/recordst"
-                app:layout_constraintStart_toEndOf="@+id/recordst"
-                app:layout_constraintTop_toTopOf="@+id/recordst"
-                app:srcCompat="@drawable/tick"
-                app:tint="@color/white"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </FrameLayout>
-    <FrameLayout
-        android:id="@+id/animationlayout"
-        android:background="@drawable/background"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_gravity="center"
-            android:id="@+id/animation"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/emoji"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/emoji" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/image" />
+
+                <ImageView
+                    android:id="@+id/fonts"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/font" />
+
+                <ImageView
+                    android:id="@+id/paint"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/paint" />
+
+                <ImageView
+                    android:id="@+id/mic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/mic" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/transparentLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:lottie_autoPlay="false"
-            app:lottie_fileName="done.json"
-            app:lottie_loop="false"/>
-    </FrameLayout>
-</RelativeLayout>
+            android:layout_height="match_parent"
+            android:background="#d0000000"
+            android:visibility="gone">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <com.demo.exampleapp.AudioRecorder.WaveformView
+                    android:id="@+id/waveformView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+                    android:layout_alignParentBottom="true"
+                    app:layout_constraintBottom_toTopOf="@+id/recordst"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_time" />
 
-<RelativeLayout
-    android:id="@+id/banner1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:gravity="center">
+                <ImageView
+                    android:id="@+id/recordst"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="100dp"
+                    android:src="@drawable/recording_start"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/closerec"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/baseline_close_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="@font/baloobhai2_regular"
+                    android:text="00:00:00"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tapstartTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.24" />
+
+                <TextView
+                    android:id="@+id/tapstartTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/baloobhai2_regular"
+                    android:text="@string/tap_to_start_recording"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/recordst"
+                    app:layout_constraintStart_toStartOf="@+id/recordst"
+                    app:layout_constraintTop_toBottomOf="@+id/recordst" />
+
+                <ImageView
+                    android:id="@+id/closeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/baseline_close_24"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/recordst"
+                    app:layout_constraintEnd_toStartOf="@+id/recordst"
+                    app:layout_constraintTop_toTopOf="@+id/recordst"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/tick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:backgroundTint="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/recordst"
+                    app:layout_constraintStart_toEndOf="@+id/recordst"
+                    app:layout_constraintTop_toTopOf="@+id/recordst"
+                    app:srcCompat="@drawable/tick"
+                    app:tint="@color/white" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/animationlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:visibility="gone">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="done.json"
+                app:lottie_loop="false" />
+        </FrameLayout>
+    </RelativeLayout>
+
 
     <RelativeLayout
-        android:id="@+id/banner"
+        android:id="@+id/banner1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:gravity="center" />
-</RelativeLayout>
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -38,21 +38,11 @@
 <color name="themetab">#54ffffff</color>
 <color name="switchoff">#bdbcbc</color>
 <color name="light">#aaaaaa</color>
-<color name="themelight7">#ffdcd6</color>
-<color name="themelight8">#c6d6ff</color>
-<color name="themelight9">#ffd8e0</color>
-<color name="themelight10">#bacdff</color>
-<color name="themelight11">#ffead1</color>
-<color name="themelight12">#ffe1e7</color>
-<color name="themelight13">#ffe1e7</color>
-<color name="themelight14">#ffe1e7</color>
-<color name="themelight15">#dabaff</color>
-<color name="themelight16">#a4c2eb</color>
-<color name="themelight17">#a4c2eb</color>
-<color name="text_hint_white">#e3e1e1</color>
+    <color name="text_hint_white">#e3e1e1</color>
 <color name="card">#fafafa</color>
 <color name="bottomnav_white">#14000000</color>
 <color name="framegrey">#77d3d3d3</color>
 <color name="transparent">#00ffffff</color>
 <color name="backgroundcolor">#6f5c5c5c</color>
+<color name="test">#B3353535</color>
 </resources>

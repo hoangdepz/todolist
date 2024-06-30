@@ -114,49 +114,7 @@ public class RateUsDialogs {
             ischeckedColor(R.color.purple);
             return;
         }
-        if (i2 == 6) {
-            ischeckedColor(R.color.parrot);
-            return;
-        }
-        if (i2 == 7) {
-            ischeckedColor(R.color.themedark7);
-            return;
-        }
-        if (i2 == 8) {
-            ischeckedColor(R.color.themedark8);
-            return;
-        }
-        if (i2 == 9) {
-            ischeckedColor(R.color.themedark9);
-            return;
-        }
-        if (i2 == 10) {
-            ischeckedColor(R.color.themedark10);
-            return;
-        }
-        if (i2 == 11) {
-            ischeckedColor(R.color.themedark11);
-            return;
-        }
-        if (i2 == 12) {
-            ischeckedColor(R.color.themedark12);
-            return;
-        }
-        if (i2 == 13) {
-            ischeckedColor(R.color.themedark13);
-            return;
-        }
-        if (i2 == 14) {
-            ischeckedColor(R.color.themedark14);
-            return;
-        }
-        if (i2 == 15) {
-            ischeckedColor(R.color.themedark15);
-        } else if (i2 == 16) {
-            ischeckedColor(R.color.themedark16);
-        } else if (i2 == 17) {
-            ischeckedColor(R.color.themedark17);
-        }
+
     }
 
     private void ischeckedColor(int i) {

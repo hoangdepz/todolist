@@ -229,42 +229,6 @@ public class FragmentSetting extends Fragment {
         } else if (i == 6) {
             textImgcolor(R.color.black);
             arrow_txt(R.color.parrot, R.color.parrot);
-        } else if (i == 7) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark7, R.color.black);
-        } else if (i == 8) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark8, R.color.black);
-        } else if (i == 9) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark9, R.color.black);
-        } else if (i == 10) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark10, R.color.black);
-        } else if (i == 11) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark11, R.color.black);
-        } else if (i == 12) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark12, R.color.black);
-        } else if (i == 13) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark13, R.color.black);
-        } else if (i == 14) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark14, R.color.black);
-        } else if (i == 15) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark15, R.color.white);
-            this.binding.pageTitle.setTextColor(getResources().getColor(R.color.white));
-        } else if (i == 16) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark16, R.color.white);
-            this.binding.pageTitle.setTextColor(getResources().getColor(R.color.white));
-        } else if (i == 17) {
-            textImgcolor(R.color.black);
-            arrow_txt(R.color.themedark17, R.color.white);
-            this.binding.pageTitle.setTextColor(getResources().getColor(R.color.white));
         }
         if (i == 5) {
             cardBackground(R.color.light_black);

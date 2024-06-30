@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.demo.exampleapp.Models.ItemTheme;
@@ -63,81 +62,55 @@ public class AdapterTheme extends RecyclerView.Adapter<AdapterTheme.ThemeViewHol
         themeviewholder.imageView.setImageResource(this.list.get(i).getImageTheme());
         themeviewholder.nameTheme.setText(this.list.get(i).getNameTheme());
         this.selectedPosition = loadLastSelectedPosition();
-        int i2 = this.context.getSharedPreferences("my_prefs", 0).getInt("my_key", 1);
-        if (i == this.selectedPosition) {
+        int i2 = context.getSharedPreferences("my_prefs", 0).getInt("my_key", 1);
+        if (i == selectedPosition) {
             if (i == 0) {
                 themeviewholder.cardView.setStrokeWidth(12);
                 themeviewholder.cardView.setStrokeColor(Color.BLACK);
+                themeviewholder.nameTheme.setTextColor(Color.BLACK);
             } else if (i == 1) {
                 themeviewholder.cardView.setStrokeWidth(12);
                 themeviewholder.cardView.setStrokeColor(Color.parseColor("#EE9106"));
+                themeviewholder.nameTheme.setTextColor(Color.WHITE);
             } else if (i == 2) {
                 themeviewholder.cardView.setStrokeWidth(12);
                 themeviewholder.cardView.setStrokeColor(Color.parseColor("#FF7878"));
+                themeviewholder.nameTheme.setTextColor(Color.BLACK);
             } else if (i == 3) {
                 themeviewholder.cardView.setStrokeWidth(12);
                 themeviewholder.cardView.setStrokeColor(Color.parseColor("#EB5559"));
+                themeviewholder.nameTheme.setTextColor(Color.WHITE);
             } else if (i == 4) {
                 themeviewholder.cardView.setStrokeWidth(12);
                 themeviewholder.cardView.setStrokeColor(Color.parseColor("#29BABD"));
+                themeviewholder.nameTheme.setTextColor(Color.WHITE);
             }
         } else {
             themeviewholder.cardView.setStrokeWidth(0);
             themeviewholder.cardView.setStrokeColor(0);
         }
-        themeviewholder.itemView.setOnClickListener(new View.OnClickListener() { 
-            @Override 
-            public void onClick(View view) {
-                if (AdapterTheme.this.isTrue) {
-                    int i3 = i;
-                    if (i3 == 0) {
-                        AdapterTheme.this.theme = 1;
-                    } else if (i3 == 1) {
-                        AdapterTheme.this.theme = 2;
-                    } else if (i3 == 2) {
-                        AdapterTheme.this.theme = 3;
-                    } else if (i3 == 3) {
-                        AdapterTheme.this.theme = 4;
-                    } else if (i3 == 4) {
-                        AdapterTheme.this.theme = 5;
-                    } else if (i3 == 5) {
-                        AdapterTheme.this.theme = 6;
-                    }
-                } else {
-                    /*int i4 = i;
-                    if (i4 == 0) {
-                        AdapterTheme.this.theme = 7;
-                    } else if (i4 == 1) {
-                        AdapterTheme.this.theme = 8;
-                    } else if (i4 == 2) {
-                        AdapterTheme.this.theme = 9;
-                    } else if (i4 == 3) {
-                        AdapterTheme.this.theme = 10;
-                    } else if (i4 == 4) {
-                        AdapterTheme.this.theme = 11;
-                    } else if (i4 == 5) {
-                        AdapterTheme.this.theme = 12;
-                    } else if (i4 == 6) {
-                        AdapterTheme.this.theme = 13;
-                    } else if (i4 == 7) {
-                        AdapterTheme.this.theme = 14;
-                    } else if (i4 == 8) {
-                        AdapterTheme.this.theme = 15;
-                    } else if (i4 == 9) {
-                        AdapterTheme.this.theme = 16;
-                    } else if (i4 == 10) {
-                        AdapterTheme.this.theme = 17;
-                    }*/
+        themeviewholder.itemView.setOnClickListener(view -> {
+            if (isTrue) {
+                int i3 = i;
+                if (i3 == 0) {
+                    theme = 1;
+                } else if (i3 == 1) {
+                    theme = 2;
+                } else if (i3 == 2) {
+                    theme = 3;
+                } else if (i3 == 3) {
+                    theme = 4;
+                } else if (i3 == 4) {
+                    theme = 5;
                 }
-                SharedPreferences.Editor edit = AdapterTheme.this.context.getSharedPreferences("my_prefs", 0).edit();
-                edit.putInt("my_key", AdapterTheme.this.theme);
-                edit.apply();
-                AdapterTheme.this.finish.onClick();
-                AdapterTheme.this.selectedPosition = i;
-                AdapterTheme.this.saveLastSelectedPosition(i);
-                AdapterTheme.this.notifyDataSetChanged();
-                AdapterTheme.this.refreshAdapters.refreshAdapter();
             }
+            SharedPreferences.Editor edit = AdapterTheme.this.context.getSharedPreferences("my_prefs", 0).edit();
+            edit.putInt("my_key", theme).apply();
+            finish.onClick();
+            selectedPosition = i;
+            saveLastSelectedPosition(i);
+            notifyDataSetChanged();
+            refreshAdapters.refreshAdapter();
         });
     }
 

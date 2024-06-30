@@ -205,53 +205,6 @@ public class CategoryActivity extends AppCompatActivity {
             color14 = getColor(R.color.black);
             setbackgroundcolor(color14);
             ischeckedColor(R.color.purple);
-        } else if (i == 6) {
-            color13 = getColor(R.color.white);
-            setbackgroundcolor(color13);
-            ischeckedColor(R.color.parrot);
-        } else if (i == 7) {
-            color12 = getColor(R.color.white);
-            setbackgroundcolor(color12);
-        } else if (i == 8) {
-            color11 = getColor(R.color.white);
-            setbackgroundcolor(color11);
-            ischeckedColor(R.color.themedark8);
-        } else if (i == 9) {
-            color10 = getColor(R.color.white);
-            setbackgroundcolor(color10);
-            ischeckedColor(R.color.themedark9);
-        } else if (i == 10) {
-            color9 = getColor(R.color.white);
-            setbackgroundcolor(color9);
-            ischeckedColor(R.color.themedark10);
-        } else if (i == 11) {
-            color8 = getColor(R.color.white);
-            setbackgroundcolor(color8);
-            ischeckedColor(R.color.themedark11);
-        } else if (i == 12) {
-            color7 = getColor(R.color.white);
-            setbackgroundcolor(color7);
-            ischeckedColor(R.color.themedark12);
-        } else if (i == 13) {
-            color6 = getColor(R.color.white);
-            setbackgroundcolor(color6);
-            ischeckedColor(R.color.themedark13);
-        } else if (i == 14) {
-            color5 = getColor(R.color.white);
-            setbackgroundcolor(color5);
-            ischeckedColor(R.color.themedark14);
-        } else if (i == 15) {
-            color4 = getColor(R.color.white);
-            setbackgroundcolor(color4);
-            ischeckedColor(R.color.themedark15);
-        } else if (i == 16) {
-            ischeckedColor(R.color.themedark16);
-            color3 = getColor(R.color.white);
-            setbackgroundcolor(color3);
-        } else if (i == 17) {
-            color2 = getColor(R.color.white);
-            setbackgroundcolor(color2);
-            ischeckedColor(R.color.themedark17);
         }
         if (i == 5) {
             textcolors(R.color.white);
@@ -280,6 +233,7 @@ public class CategoryActivity extends AppCompatActivity {
 
     @Override 
     public void onBackPressed() {
+        super.onBackPressed();
         setResult(-1, new Intent());
         this.isBackpressed = false;
         LockHolder.getInstance().setboolean(false);

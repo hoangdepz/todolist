@@ -546,39 +546,6 @@ public class ActivityReminder extends AppCompatActivity {
             color = getColor(R.color.full_light_parrot);
             setbackgroundcolor(color);
             ischeckedColor(R.color.parrot);
-        } else if (i == 7) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_7));
-            ischeckedColor(R.color.themedark7);
-        } else if (i == 8) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_8));
-            ischeckedColor(R.color.themedark8);
-        } else if (i == 9) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_9));
-            ischeckedColor(R.color.themedark9);
-        } else if (i == 10) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_10));
-            ischeckedColor(R.color.themedark10);
-        } else if (i == 11) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_11));
-            ischeckedColor(R.color.themedark11);
-        } else if (i == 12) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_12));
-            ischeckedColor(R.color.themedark12);
-        } else if (i == 13) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_13));
-            ischeckedColor(R.color.themedark13);
-        } else if (i == 14) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_14));
-            ischeckedColor(R.color.themedark14);
-        } else if (i == 15) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_15));
-            ischeckedColor(R.color.themedark15);
-        } else if (i == 16) {
-            ischeckedColor(R.color.themedark16);
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_16));
-        } else if (i == 17) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_17));
-            ischeckedColor(R.color.themedark17);
         }
         if (i == 5) {
             cardBackground(R.color.light_black);
@@ -630,42 +597,7 @@ public class ActivityReminder extends AppCompatActivity {
             isSwitchColor(R.color.purple);
             return;
         }
-        if (i == 6) {
-            isSwitchColor(R.color.parrot);
-            return;
-        }
-        if (i == 7) {
-            isSwitchColor(R.color.themedark7);
-            return;
-        }
-        if (i == 8) {
-            isSwitchColor(R.color.themedark8);
-            return;
-        }
-        if (i == 9) {
-            isSwitchColor(R.color.themedark9);
-            return;
-        }
-        if (i == 10) {
-            isSwitchColor(R.color.themedark10);
-            return;
-        }
-        if (i == 11) {
-            isSwitchColor(R.color.themedark11);
-            return;
-        }
-        if (i == 12) {
-            isSwitchColor(R.color.themedark12);
-            return;
-        }
-        if (i == 13) {
-            isSwitchColor(R.color.themedark13);
-            return;
-        }
-        if (i == 14) {
-            isSwitchColor(R.color.themedark14);
-            return;
-        }
+
         if (i == 15) {
             isSwitchColor(R.color.themedark15);
         } else if (i == 16) {

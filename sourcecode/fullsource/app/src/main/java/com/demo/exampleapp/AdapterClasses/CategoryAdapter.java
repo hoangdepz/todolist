@@ -75,28 +75,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
                 viewholder.setSelected(R.color.purple);
             } else if (selectedThemePrefId == 6) {
                 viewholder.setSelected(R.color.parrot);
-            } else if (selectedThemePrefId == 7) {
-                viewholder.setSelected(R.color.themedark7);
-            } else if (selectedThemePrefId == 8) {
-                viewholder.setSelected(R.color.themedark8);
-            } else if (selectedThemePrefId == 9) {
-                viewholder.setSelected(R.color.themedark9);
-            } else if (selectedThemePrefId == 10) {
-                viewholder.setSelected(R.color.themedark10);
-            } else if (selectedThemePrefId == 11) {
-                viewholder.setSelected(R.color.themedark11);
-            } else if (selectedThemePrefId == 12) {
-                viewholder.setSelected(R.color.themedark12);
-            } else if (selectedThemePrefId == 13) {
-                viewholder.setSelected(R.color.themedark13);
-            } else if (selectedThemePrefId == 14) {
-                viewholder.setSelected(R.color.themedark14);
-            } else if (selectedThemePrefId == 15) {
-                viewholder.setSelected(R.color.themedark15);
-            } else if (selectedThemePrefId == 16) {
-                viewholder.setSelected(R.color.themedark16);
-            } else if (selectedThemePrefId == 17) {
-                viewholder.setSelected(R.color.themedark17);
             }
             ToggleButton toggleButton = viewholder.toggleButton;
             color2 = ContextCompat.getColor(this.context, R.color.white);
@@ -114,28 +92,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
                 viewholder.setSelected(R.color.light_purple);
             } else if (selectedThemePrefId == 6) {
                 viewholder.setSelected(R.color.light_parrot);
-            } else if (selectedThemePrefId == 7) {
-                viewholder.setSelected(R.color.themelight7);
-            } else if (selectedThemePrefId == 8) {
-                viewholder.setSelected(R.color.themelight8);
-            } else if (selectedThemePrefId == 9) {
-                viewholder.setSelected(R.color.themelight9);
-            } else if (selectedThemePrefId == 10) {
-                viewholder.setSelected(R.color.themelight10);
-            } else if (selectedThemePrefId == 11) {
-                viewholder.setSelected(R.color.themelight11);
-            } else if (selectedThemePrefId == 12) {
-                viewholder.setSelected(R.color.themelight12);
-            } else if (selectedThemePrefId == 13) {
-                viewholder.setSelected(R.color.themelight13);
-            } else if (selectedThemePrefId == 14) {
-                viewholder.setSelected(R.color.themelight14);
-            } else if (selectedThemePrefId == 15) {
-                viewholder.setSelected(R.color.themelight15);
-            } else if (selectedThemePrefId == 16) {
-                viewholder.setSelected(R.color.themelight16);
-            } else if (selectedThemePrefId == 17) {
-                viewholder.setSelected(R.color.themelight17);
             }
             ToggleButton toggleButton2 = viewholder.toggleButton;
             color = ContextCompat.getColor(this.context, R.color.black);

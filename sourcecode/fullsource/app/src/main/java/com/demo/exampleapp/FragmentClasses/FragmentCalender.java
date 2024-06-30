@@ -459,28 +459,6 @@ public class FragmentCalender extends Fragment {
             addButton(R.color.purple);
         } else if (i == 6) {
             addButton(R.color.parrot);
-        } else if (i == 7) {
-            addButton(R.color.themedark7);
-        } else if (i == 8) {
-            addButton(R.color.themedark8);
-        } else if (i == 9) {
-            addButton(R.color.themedark9);
-        } else if (i == 10) {
-            addButton(R.color.themedark10);
-        } else if (i == 11) {
-            addButton(R.color.themedark11);
-        } else if (i == 12) {
-            addButton(R.color.themedark12);
-        } else if (i == 13) {
-            addButton(R.color.themedark13);
-        } else if (i == 14) {
-            addButton(R.color.themedark14);
-        } else if (i == 15) {
-            addButton(R.color.themedark15);
-        } else if (i == 16) {
-            addButton(R.color.themedark16);
-        } else if (i == 17) {
-            addButton(R.color.themedark17);
         }
         int i2 = this.theme;
         if (i2 == 5 || i2 == 15 || i2 == 16 || i2 == 17) {

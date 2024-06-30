@@ -188,39 +188,6 @@ public class FragmentHome extends Fragment {
         } else if (i == 6) {
             textcolor(R.color.black);
             addButton(R.color.parrot);
-        } else if (i == 7) {
-            addButton(R.color.themedark7);
-            textcolor(R.color.black);
-        } else if (i == 8) {
-            addButton(R.color.themedark8);
-            textcolor(R.color.black);
-        } else if (i == 9) {
-            addButton(R.color.themedark9);
-            textcolor(R.color.black);
-        } else if (i == 10) {
-            addButton(R.color.themedark10);
-            textcolor(R.color.black);
-        } else if (i == 11) {
-            addButton(R.color.themedark11);
-            textcolor(R.color.black);
-        } else if (i == 12) {
-            addButton(R.color.themedark12);
-            textcolor(R.color.black);
-        } else if (i == 13) {
-            addButton(R.color.themedark13);
-            textcolor(R.color.black);
-        } else if (i == 14) {
-            addButton(R.color.themedark14);
-            textcolor(R.color.black);
-        } else if (i == 15) {
-            addButton(R.color.themedark15);
-            textcolor(R.color.white);
-        } else if (i == 16) {
-            addButton(R.color.themedark16);
-            textcolor(R.color.white);
-        } else if (i == 17) {
-            addButton(R.color.themedark17);
-            textcolor(R.color.white);
         }
         if (i == 5) {
             this.binding.layoutch.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.light_black)));

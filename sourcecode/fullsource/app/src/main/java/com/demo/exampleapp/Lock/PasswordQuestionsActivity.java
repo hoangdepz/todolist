@@ -183,43 +183,6 @@ public class PasswordQuestionsActivity extends AppCompatActivity {
             color2 = getColor(R.color.black);
             setbackgroundcolor(color2);
             ischeckedColor(R.color.purple);
-        } else if (i2 == 6) {
-            color = getColor(R.color.full_light_parrot);
-            setbackgroundcolor(color);
-            ischeckedColor(R.color.parrot);
-        } else if (i2 == 7) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_7));
-            ischeckedColor(R.color.themedark7);
-        } else if (i2 == 8) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_8));
-            ischeckedColor(R.color.themedark8);
-        } else if (i2 == 9) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_9));
-            ischeckedColor(R.color.themedark9);
-        } else if (i2 == 10) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_10));
-            ischeckedColor(R.color.themedark10);
-        } else if (i2 == 11) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_11));
-            ischeckedColor(R.color.themedark11);
-        } else if (i2 == 12) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_12));
-            ischeckedColor(R.color.themedark12);
-        } else if (i2 == 13) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_13));
-            ischeckedColor(R.color.themedark13);
-        } else if (i2 == 14) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_14));
-            ischeckedColor(R.color.themedark14);
-        } else if (i2 == 15) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_15));
-            ischeckedColor(R.color.themedark15);
-        } else if (i2 == 16) {
-            ischeckedColor(R.color.themedark16);
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_16));
-        } else if (i2 == 17) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_17));
-            ischeckedColor(R.color.themedark17);
         }
         if (this.theme == 5) {
             textcolors(R.color.white);

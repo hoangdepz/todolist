@@ -274,42 +274,7 @@ public class ShowPasscodeActivity extends FragmentActivity {
             this.binding.mainActivity.setBackground(getDrawable(R.drawable.lockbac));
             return;
         }
-        if (i == 6) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.lockbac));
-            return;
-        }
-        if (i == 7) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_7));
-            return;
-        }
-        if (i == 8) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_8));
-            return;
-        }
-        if (i == 9) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_9));
-            return;
-        }
-        if (i == 10) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_10));
-            return;
-        }
-        if (i == 11) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_11));
-            return;
-        }
-        if (i == 12) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_12));
-            return;
-        }
-        if (i == 13) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_13));
-            return;
-        }
-        if (i == 14) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_14));
-            return;
-        }
+
         if (i == 15) {
             this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_15));
         } else if (i == 16) {

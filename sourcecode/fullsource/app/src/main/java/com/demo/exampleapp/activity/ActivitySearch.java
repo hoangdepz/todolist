@@ -234,31 +234,6 @@ public class ActivitySearch extends AppCompatActivity {
         } else if (i == 5) {
             color2 = getColor(R.color.black);
             setbackgroundcolor(color2);
-        } else if (i == 6) {
-            color = getColor(R.color.full_light_parrot);
-            setbackgroundcolor(color);
-        } else if (i == 7) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_7));
-        } else if (i == 8) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_8));
-        } else if (i == 9) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_9));
-        } else if (i == 10) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_10));
-        } else if (i == 11) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_11));
-        } else if (i == 12) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_12));
-        } else if (i == 13) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_13));
-        } else if (i == 14) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_14));
-        } else if (i == 15) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_15));
-        } else if (i == 16) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_16));
-        } else if (i == 17) {
-            this.binding.activity.setBackground(getDrawable(R.drawable.theme_s_17));
         }
         if (i == 5 || i == 15 || i == 16 || i == 17) {
             textcolors(R.color.white);

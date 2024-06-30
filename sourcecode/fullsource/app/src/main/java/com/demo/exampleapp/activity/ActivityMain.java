@@ -216,43 +216,6 @@ public class ActivityMain extends AppCompatActivity {
             tablayoutcolor(R.color.light_black);
             navigationtheme(R.color.black);
             this.binding.navmenu.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.purple)));
-        } else if (i == 6) {
-            setbackgroundcolor(getResources().getColor(R.color.full_light_parrot));
-            tablayoutcolor(R.color.light_parrot);
-            navigationtheme(R.color.parrot);
-        } else if (i == 7) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_7));
-            navigationtheme(R.color.themedark7);
-        } else if (i == 8) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_8));
-            navigationtheme(R.color.themedark8);
-        } else if (i == 9) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_9));
-            navigationtheme(R.color.themedark9);
-        } else if (i == 10) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_10));
-            navigationtheme(R.color.themedark10);
-        } else if (i == 11) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_11));
-            navigationtheme(R.color.themedark11);
-        } else if (i == 12) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_12));
-            navigationtheme(R.color.themedark12);
-        } else if (i == 13) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_13));
-            navigationtheme(R.color.themedark13);
-        } else if (i == 14) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_14));
-            navigationtheme(R.color.themedark14);
-        } else if (i == 15) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_15));
-            navigationtheme(R.color.themedark15);
-        } else if (i == 16) {
-            navigationtheme(R.color.themedark16);
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_16));
-        } else if (i == 17) {
-            this.binding.mainActivity.setBackground(getDrawable(R.drawable.theme_s_17));
-            navigationtheme(R.color.themedark17);
         }
         if (i == 5 || i == 15 || i == 16 || i == 17) {
             toggle(getResources().getColor(R.color.white));
@@ -309,6 +272,7 @@ public class ActivityMain extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         setResult(-1, new Intent());
         LockHolder.getInstance().setboolean(false);
         finish();

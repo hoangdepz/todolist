@@ -213,31 +213,6 @@ public class PasswordOptionsActivity extends AppCompatActivity {
         } else if (i == 5) {
             color2 = getColor(R.color.black);
             setbackgroundcolor(color2);
-        } else if (i == 6) {
-            color = getColor(R.color.full_light_parrot);
-            setbackgroundcolor(color);
-        } else if (i == 7) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_7));
-        } else if (i == 8) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_8));
-        } else if (i == 9) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_9));
-        } else if (i == 10) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_10));
-        } else if (i == 11) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_11));
-        } else if (i == 12) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_12));
-        } else if (i == 13) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_13));
-        } else if (i == 14) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_14));
-        } else if (i == 15) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_15));
-        } else if (i == 16) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_16));
-        } else if (i == 17) {
-            this.binding.parentLayout.setBackground(getDrawable(R.drawable.theme_s_17));
         }
         if (this.theme == 5) {
             cardBackground(R.color.light_black);
@@ -295,45 +270,7 @@ public class PasswordOptionsActivity extends AppCompatActivity {
             isSwitchColor(R.color.parrot);
             return;
         }
-        if (i == 7) {
-            isSwitchColor(R.color.themedark7);
-            return;
-        }
-        if (i == 8) {
-            isSwitchColor(R.color.themedark8);
-            return;
-        }
-        if (i == 9) {
-            isSwitchColor(R.color.themedark9);
-            return;
-        }
-        if (i == 10) {
-            isSwitchColor(R.color.themedark10);
-            return;
-        }
-        if (i == 11) {
-            isSwitchColor(R.color.themedark11);
-            return;
-        }
-        if (i == 12) {
-            isSwitchColor(R.color.themedark12);
-            return;
-        }
-        if (i == 13) {
-            isSwitchColor(R.color.themedark13);
-            return;
-        }
-        if (i == 14) {
-            isSwitchColor(R.color.themedark14);
-            return;
-        }
-        if (i == 15) {
-            isSwitchColor(R.color.themedark15);
-        } else if (i == 16) {
-            isSwitchColor(R.color.themedark16);
-        } else if (i == 17) {
-            isSwitchColor(R.color.themedark17);
-        }
+
     }
 
     public void setthemechangeSwitch() {
@@ -361,49 +298,7 @@ public class PasswordOptionsActivity extends AppCompatActivity {
             isSwitchChangeColor(R.color.purple);
             return;
         }
-        if (i == 6) {
-            isSwitchChangeColor(R.color.parrot);
-            return;
-        }
-        if (i == 7) {
-            isSwitchChangeColor(R.color.themedark7);
-            return;
-        }
-        if (i == 8) {
-            isSwitchChangeColor(R.color.themedark8);
-            return;
-        }
-        if (i == 9) {
-            isSwitchChangeColor(R.color.themedark9);
-            return;
-        }
-        if (i == 10) {
-            isSwitchChangeColor(R.color.themedark10);
-            return;
-        }
-        if (i == 11) {
-            isSwitchChangeColor(R.color.themedark11);
-            return;
-        }
-        if (i == 12) {
-            isSwitchChangeColor(R.color.themedark12);
-            return;
-        }
-        if (i == 13) {
-            isSwitchChangeColor(R.color.themedark13);
-            return;
-        }
-        if (i == 14) {
-            isSwitchChangeColor(R.color.themedark14);
-            return;
-        }
-        if (i == 15) {
-            isSwitchChangeColor(R.color.themedark15);
-        } else if (i == 16) {
-            isSwitchChangeColor(R.color.themedark16);
-        } else if (i == 17) {
-            isSwitchChangeColor(R.color.themedark17);
-        }
+
     }
 
     public void textcolors(int i) {

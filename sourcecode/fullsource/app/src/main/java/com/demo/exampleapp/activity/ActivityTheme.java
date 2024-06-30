@@ -1,6 +1,7 @@
 package com.demo.exampleapp.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
@@ -32,8 +33,9 @@ public class ActivityTheme extends AppCompatActivity implements refreshAdapters 
         ThemeActivityBinding inflate = ThemeActivityBinding.inflate(getLayoutInflater());
         this.binding = inflate;
         setContentView(inflate.getRoot());
-        setStatusBarTransparentBlack();
+        //setStatusBarTransparentBlack();
         initData();
+        setTheme();
         this.binding.backhome.setOnClickListener(view -> ActivityTheme.this.onBackPressed());
     }
 
@@ -52,33 +54,36 @@ public class ActivityTheme extends AppCompatActivity implements refreshAdapters 
         arrayList.add(new ItemTheme(R.drawable.im_theme_cute, "Cute"));
         arrayList.add(new ItemTheme(R.drawable.im_theme_cool, "Cool"));
         arrayList.add(new ItemTheme(R.drawable.im_theme_game, "Game"));
-        this.adapter = new AdapterTheme(arrayList, this, ActivityTheme.this::onClick, true, this);
-        this.binding.themeRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
-        this.binding.themeRecyclerView.setAdapter(this.adapter);
+        adapter = new AdapterTheme(arrayList, this, ActivityTheme.this::onClick, true, this);
+        binding.themeRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
+        binding.themeRecyclerView.setAdapter(this.adapter);
     }
 
-    
     public void onClick() {
         this.binding.scroll.setVisibility(View.GONE);
         setTheme();
         this.binding.prograss.setVisibility(View.VISIBLE);
-        startActivity(new Intent(this, (Class<?>) ActivityMain.class));
+        startActivity(new Intent(this, ActivityMain.class));
         finishAffinity();
     }
 
     @Override 
     public void refreshAdapter() {
-        this.adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();
     }
 
     public void setTheme() {
         int i = getSharedPreferences("my_prefs", 0).getInt("my_key", 1);
         if (i == 1) {
-            addButton(R.color.green);
+            binding.container.setBackgroundColor(Color.parseColor("#F8F8F8"));
+            binding.imBackground.setVisibility(View.GONE);
             return;
         }
         if (i == 2) {
-            addButton(R.color.pink);
+            binding.imBackground.setBackgroundResource(R.drawable.im_bg_theme_dark);
+            binding.toolbar.setBackgroundColor(Color.parseColor("#B3353535"));
+            binding.textView3.setTextColor(Color.WHITE);
+            binding.backhome.setImageResource(R.drawable.ic_back_theme_dark);
             return;
         }
         if (i == 3) {

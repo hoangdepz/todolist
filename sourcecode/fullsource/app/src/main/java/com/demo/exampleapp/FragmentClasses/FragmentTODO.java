@@ -338,56 +338,8 @@ public class FragmentTODO extends Fragment implements onTaskChanges {
             addButton(R.color.parrot);
             return;
         }
-        if (i == 7) {
-            addButton(R.color.themedark7);
-            textcolor(R.color.black);
-            return;
-        }
-        if (i == 8) {
-            textcolor(R.color.black);
-            addButton(R.color.themedark8);
-            return;
-        }
-        if (i == 9) {
-            textcolor(R.color.black);
-            addButton(R.color.themedark9);
-            return;
-        }
-        if (i == 10) {
-            addButton(R.color.themedark10);
-            textcolor(R.color.black);
-            return;
-        }
-        if (i == 11) {
-            textcolor(R.color.black);
-            addButton(R.color.themedark11);
-            return;
-        }
-        if (i == 12) {
-            textcolor(R.color.black);
-            addButton(R.color.themedark12);
-            return;
-        }
-        if (i == 13) {
-            textcolor(R.color.black);
-            addButton(R.color.themedark13);
-            return;
-        }
-        if (i == 14) {
-            textcolor(R.color.black);
-            addButton(R.color.themedark14);
-            return;
-        }
-        if (i == 15) {
-            addButton(R.color.themedark15);
-            textcolor(R.color.white);
-        } else if (i == 16) {
-            textcolor(R.color.white);
-            addButton(R.color.themedark16);
-        } else if (i == 17) {
-            addButton(R.color.themedark17);
-            textcolor(R.color.white);
-        }
+
+
     }
 
     public void addButton(int i) {
